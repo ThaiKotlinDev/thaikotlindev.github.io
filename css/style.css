@@ -223,6 +223,12 @@ a span.ti-twitter-alt {
 	text-transform: uppercase;
 	font-weight: 600;
 }
+.schedule .row {
+  padding: 20px 10px;
+}
+.schedule .row img {
+  margin-bottom: 10px;
+}
 
 
 .footer {

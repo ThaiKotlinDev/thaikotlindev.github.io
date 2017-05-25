@@ -27,11 +27,13 @@
   <!-- Social Media tag Ends -->
 
   <!-- Bootstrap -->
-  <link rel="Shortcut Icon" href="/img/favicon.ico" type="image/x-icon">
+  <link rel="Shortcut Icon" href="/images/favicon.ico" type="image/x-icon">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <link href="css/themify-icons.css" rel="stylesheet">
   <link href='css/dosis-font.css' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css" />
+
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -81,7 +83,7 @@
   <!-- Start: Header -->
   <div class="row hero-header" id="kotlin">
     <div class="col-md-7">
-      <img src="img/meetup-logo.png" class="logo">
+      <img src="images/meetup-logo.png" class="logo">
       <h1>Attend the most awaited Kotlin workshop of 2017</h1>
       <h3>to boost up your skill!</h3>
       <h4>October, 2017</h4>
@@ -90,7 +92,7 @@
 
     </div>
     <div class="col-md-5 hidden-xs">
-      <img src="img/rocket.png" class="rocket animated bounce">
+      <img src="images/rocket.png" class="rocket animated bounce">
     </div>
   </div>
   <!-- End: Header -->
@@ -127,32 +129,32 @@
   <div class="row me-row content-ct speaker" id="staff">
     <h2 class="row-title">Meet the Staff</h2>
     <div class="col-md-4 col-sm-6 feature">
-      <img src="img/verachad.jpg" class="speaker-img">
+      <img src="images/verachad.jpg" class="speaker-img">
       <h3>Verachad Wongsawangtham</h3>
       <p>Senior Android Developer @ Agoda</p>
       <ul class="speaker-social">
-        <li><a href="https://github.com/verachadW"><span class="ti-github"></span></a></li>
-        <li><a href="https://twitter.com/verachadw"><span class="ti-twitter-alt"></span></a></li>
-        <li><a href="https://www.linkedin.com/in/verachadw/#"><span class="ti-linkedin"></span></a></li>
+        <li><a href="https://github.com/verachadW" target="_blank"><span class="ti-github"></span></a></li>
+        <li><a href="https://twitter.com/verachadw" target="_blank"><span class="ti-twitter-alt"></span></a></li>
+        <li><a href="https://www.linkedin.com/in/verachadw/" target="_blank"><span class="ti-linkedin"></span></a></li>
       </ul>
     </div>
     <div class="col-md-4 col-sm-6 feature">
-      <img src="img/dew.jpg" class="speaker-img">
+      <img src="images/dew.jpg" class="speaker-img">
       <h3>Dew</h3>
       <p>Mobile Developer @ Santora Nakama & YesMom,<br />Editor at Black Lens Publication</p>
       <ul class="speaker-social">
-        <li><a href="http://blacklenspub.com/"><span class="ti-world"></span></a></li>
-        <li><a href="https://medium.com/@stdew"><span class="ti-marker-alt"></span></a></li>
+        <li><a href="http://blacklenspub.com/" target="_blank"><span class="ti-world"></span></a></li>
+        <li><a href="https://medium.com/@stdew" target="_blank"><span class="ti-marker-alt"></span></a></li>
       </ul>
     </div>
     <div class="col-md-4 col-sm-6 feature">
-      <img src="img/pop.jpg" class="speaker-img">
+      <img src="images/pop.jpg" class="speaker-img">
       <h3>Pop</h3>
       <p>Android ❤ Kotlin @ ShopSpot</p>
       <ul class="speaker-social">
-        <li><a href="https://github.com/minibugdev"><span class="ti-github"></span></a></li>
-        <li><a href="https://www.facebook.com/teeranai.b"><span class="ti-facebook"></span></a></li>
-        <li><a href="https://www.linkedin.com/in/teeranaib/"><span class="ti-linkedin"></span></a></li>
+        <li><a href="https://github.com/minibugdev" target="_blank"><span class="ti-github"></span></a></li>
+        <li><a href="https://www.facebook.com/teeranai.b" target="_blank"><span class="ti-facebook"></span></a></li>
+        <li><a href="https://www.linkedin.com/in/teeranaib/" target="_blank"><span class="ti-linkedin"></span></a></li>
       </ul>
     </div>
   </div>
@@ -175,230 +177,68 @@
 </div>
 <!-- End: Tickets -->
 
-<!-- Start: Schedule -->
+<!-- Start: Event -->
 <div class="container">
   <div class="row me-row schedule" id="events">
     <h2 class="row-title content-ct">Our Events</h2>
     <div class="col-md-12">
       <!-- Nav tabs -->
       <ul class="nav nav-tabs" role="tablist">
-        <li role="presentation" class="active"><a href="#day-1" aria-controls="home" role="tab"
-                                                  data-toggle="tab">Day 01
-          <small class="hidden-xs">(20<sup>th</sup>, October)</small>
-        </a></li>
-        <li role="presentation"><a href="#day-2" aria-controls="profile" role="tab"
-                                   data-toggle="tab">Day 02
-          <small class="hidden-xs">(21<sup>st</sup>, October)</small>
-        </a></li>
-        <li role="presentation"><a href="#day-3" aria-controls="messages" role="tab"
-                                   data-toggle="tab">Day 03
-          <small class="hidden-xs">(22<sup>nd</sup>, October)</small>
-        </a></li>
+        <li role="presentation" class="active">
+          <a href="#meetup1" aria-controls="meetup1" role="tab" data-toggle="tab">Kotlin Meetup #1</a>
+        </li>
+        <li role="presentation">
+          <a href="#kotlin-bkk" aria-controls="kotlin-bkk" role="tab" data-toggle="tab">Kotlin 1.1 Event BKK</a>
+        </li>
       </ul>
 
       <!-- Tab panes -->
       <div class="tab-content">
-        <div role="tabpanel" class="tab-pane fade in active" id="day-1">
+        <div role="tabpanel" class="tab-pane fade in active" id="meetup1">
           <div class="row">
-            <div class="col-md-6">
-              <div class="media">
-                <div class="media-left">
-                  <a href="#">
-                    <img class="media-object" src="img/speaker-1.png" alt="...">
-                  </a>
-                </div>
-                <div class="media-body">
-                  <h4 class="media-heading">10am to 10:30am</h4>
-                  <h5>THE DESIGNER’S GUIDE TO BEING ESSENTIAL</h5>
-                  <p>Simon is designer and partner at Fictivekin and has worked in a variety of
-                    situations for bands, record labels, governments, polar explorers, and most
-                    other things. </p>
-                </div>
-              </div>
+            <div class="col-md-3">
+              <a data-fancybox="meetup1" href="images/meetup/01.jpg">
+                <img class="img-responsive" src="images/meetup/t01.jpg" alt="Kotlin Meetuo #1">
+              </a>
             </div>
-            <div class="col-md-6">
-              <div class="media">
-                <div class="media-left">
-                  <a href="#">
-                    <img class="media-object" src="img/speaker-2.png" alt="...">
-                  </a>
-                </div>
-                <div class="media-body">
-                  <h4 class="media-heading">10:45am to 11:30am</h4>
-                  <h5>MODULAR DESIGN AT WORK</h5>
-                  <p>Simon is designer and partner at Fictivekin and has worked in a variety of
-                    situations for bands, record labels, governments, polar explorers, and most
-                    other things. </p>
-                </div>
-              </div>
+            <div class="col-md-3">
+              <a data-fancybox="meetup1" href="images/meetup/02.jpg">
+                <img class="img-responsive" src="images/meetup/t02.jpg" alt="Kotlin Meetuo #1">
+              </a>
             </div>
-            <div class="col-md-6">
-              <div class="media">
-                <div class="media-left">
-                  <a href="#">
-                    <img class="media-object" src="img/speaker-3.png" alt="...">
-                  </a>
-                </div>
-                <div class="media-body">
-                  <h4 class="media-heading">12:00pm to 01:30pm</h4>
-                  <h5>AN INTRODUCTION TO TOUCH AND POINTER EVENTS</h5>
-                  <p>Simon is designer and partner at Fictivekin and has worked in a variety of
-                    situations for bands, record labels, governments, polar explorers, and most
-                    other things. </p>
-                </div>
-              </div>
+            <div class="col-md-3">
+              <a data-fancybox="meetup1" href="images/meetup/03.jpg">
+                <img class="img-responsive" src="images/meetup/t03.jpg" alt="Kotlin Meetuo #1">
+              </a>
             </div>
-            <div class="col-md-6">
-              <div class="media">
-                <div class="media-left">
-                  <a href="#">
-                    <img class="media-object" src="img/speaker-4.png" alt="...">
-                  </a>
-                </div>
-                <div class="media-body">
-                  <h4 class="media-heading">02:00pm to 03.30pm</h4>
-                  <h5>WEB FONTS PERFORMANCE</h5>
-                  <p>Simon is designer and partner at Fictivekin and has worked in a variety of
-                    situations for bands, record labels, governments, polar explorers, and most
-                    other things. </p>
-                </div>
-              </div>
+            <div class="col-md-3">
+              <a data-fancybox="meetup1" href="images/meetup/04.jpg">
+                <img class="img-responsive" src="images/meetup/t04.jpg" alt="Kotlin Meetuo #1">
+              </a>
             </div>
           </div>
         </div>
-        <div role="tabpanel" class="tab-pane fade" id="day-2">
+        <div role="tabpanel" class="tab-pane fade" id="kotlin-bkk">
           <div class="row">
-            <div class="col-md-6">
-              <div class="media">
-                <div class="media-left">
-                  <a href="#">
-                    <img class="media-object" src="img/speaker-4.png" alt="...">
-                  </a>
-                </div>
-                <div class="media-body">
-                  <h4 class="media-heading">10am to 10:30am</h4>
-                  <h5>MAKING DOG FOOD PART OF A BALANCED DIET</h5>
-                  <p>Simon is designer and partner at Fictivekin and has worked in a variety of
-                    situations for bands, record labels, governments, polar explorers, and most
-                    other things. </p>
-                </div>
-              </div>
+            <div class="col-md-3">
+              <a data-fancybox="kotlinbkk" href="images/kotlinbkk/01.jpg">
+                <img class="img-responsive" src="images/kotlinbkk/t01.jpg" alt="Kotlin 1.1 Event BKK">
+              </a>
             </div>
-            <div class="col-md-6">
-              <div class="media">
-                <div class="media-left">
-                  <a href="#">
-                    <img class="media-object" src="img/speaker-3.png" alt="...">
-                  </a>
-                </div>
-                <div class="media-body">
-                  <h4 class="media-heading">10:45am to 11:30am</h4>
-                  <h5>HANDS-ON WEB AUDIO</h5>
-                  <p>Simon is designer and partner at Fictivekin and has worked in a variety of
-                    situations for bands, record labels, governments, polar explorers, and most
-                    other things. </p>
-                </div>
-              </div>
+            <div class="col-md-3">
+              <a data-fancybox="kotlinbkk" href="images/kotlinbkk/02.jpg">
+                <img class="img-responsive" src="images/kotlinbkk/t02.jpg" alt="Kotlin 1.1 Event BKK">
+              </a>
             </div>
-            <div class="col-md-6">
-              <div class="media">
-                <div class="media-left">
-                  <a href="#">
-                    <img class="media-object" src="img/speaker-2.png" alt="...">
-                  </a>
-                </div>
-                <div class="media-body">
-                  <h4 class="media-heading">12:00pm to 01:30pm</h4>
-                  <h5>CONVERSION RATE OPTIMIZATION TECHNIQUES IN ECOMMERCE</h5>
-                  <p>Simon is designer and partner at Fictivekin and has worked in a variety of
-                    situations for bands, record labels, governments, polar explorers, and most
-                    other things. </p>
-                </div>
-              </div>
+            <div class="col-md-3">
+              <a data-fancybox="kotlinbkk" href="images/kotlinbkk/03.jpg">
+                <img class="img-responsive" src="images/kotlinbkk/t03.jpg" alt="Kotlin 1.1 Event BKK">
+              </a>
             </div>
-            <div class="col-md-6">
-              <div class="media">
-                <div class="media-left">
-                  <a href="#">
-                    <img class="media-object" src="img/speaker-1.png" alt="...">
-                  </a>
-                </div>
-                <div class="media-body">
-                  <h4 class="media-heading">02:00pm to 03.30pm</h4>
-                  <h5>PAPER PROTOTYPING APPLICATIONS</h5>
-                  <p>Simon is designer and partner at Fictivekin and has worked in a variety of
-                    situations for bands, record labels, governments, polar explorers, and most
-                    other things. </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div role="tabpanel" class="tab-pane fade" id="day-3">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="media">
-                <div class="media-left">
-                  <a href="#">
-                    <img class="media-object" src="img/speaker-6.png" alt="...">
-                  </a>
-                </div>
-                <div class="media-body">
-                  <h4 class="media-heading">10am to 10:30am</h4>
-                  <h5>THE DESIGNER’S GUIDE TO BEING ESSENTIAL</h5>
-                  <p>Simon is designer and partner at Fictivekin and has worked in a variety of
-                    situations for bands, record labels, governments, polar explorers, and most
-                    other things. </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="media">
-                <div class="media-left">
-                  <a href="#">
-                    <img class="media-object" src="img/speaker-5.png" alt="...">
-                  </a>
-                </div>
-                <div class="media-body">
-                  <h4 class="media-heading">10:45am to 11:30am</h4>
-                  <h5>THE DESIGNER’S GUIDE TO BEING ESSENTIAL</h5>
-                  <p>Simon is designer and partner at Fictivekin and has worked in a variety of
-                    situations for bands, record labels, governments, polar explorers, and most
-                    other things. </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="media">
-                <div class="media-left">
-                  <a href="#">
-                    <img class="media-object" src="img/speaker-3.png" alt="...">
-                  </a>
-                </div>
-                <div class="media-body">
-                  <h4 class="media-heading">12:00pm to 01:30pm</h4>
-                  <h5>THE DESIGNER’S GUIDE TO BEING ESSENTIAL</h5>
-                  <p>Simon is designer and partner at Fictivekin and has worked in a variety of
-                    situations for bands, record labels, governments, polar explorers, and most
-                    other things. </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="media">
-                <div class="media-left">
-                  <a href="#">
-                    <img class="media-object" src="img/speaker-4.png" alt="...">
-                  </a>
-                </div>
-                <div class="media-body">
-                  <h4 class="media-heading">02:00pm to 03.30pm</h4>
-                  <h5>THE DESIGNER’S GUIDE TO BEING ESSENTIAL</h5>
-                  <p>Simon is designer and partner at Fictivekin and has worked in a variety of
-                    situations for bands, record labels, governments, polar explorers, and most
-                    other things. </p>
-                </div>
-              </div>
+            <div class="col-md-3">
+              <a data-fancybox="kotlinbkk" href="images/kotlinbkk/04.jpg">
+                <img class="img-responsive" src="images/kotlinbkk/t04.jpg" alt="Kotlin 1.1 Event BKK">
+              </a>
             </div>
           </div>
         </div>
@@ -406,7 +246,7 @@
     </div>
   </div>
 </div>
-<!-- End: Schedule -->
+<!-- End: Event -->
 
 <!-- Start: Footer -->
 <div class="container-fluid footer" id="sponsorship">
@@ -444,6 +284,7 @@
 <script src="js/jquery.easing.min.js"></script>
 <script src="js/scrolling-nav.js"></script>
 <script src="js/validator.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
 <!-- Google Analytics -->
 <script>
   (function (i, s, o, g, r, a, m) {
