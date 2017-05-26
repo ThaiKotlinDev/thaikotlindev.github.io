@@ -203,7 +203,16 @@ a span.ti-twitter-alt {
 .tickets .price sup {
 	font-size: 0.4em;
 }
-
+.tickets .detail {
+  width: 50%;
+  margin: auto;
+}
+.tickets ul {
+  margin: 0 10%;
+}
+.tickets ul li {
+  list-style: square;
+}
 
 .nav-tabs {
     margin-top: 20px;
@@ -320,6 +329,10 @@ ul.footer-menu li a:hover {
         text-align: center;
         max-height: 550px;
     }
+    .tickets .detail {
+      width: 90%;
+      margin: auto;
+    }
     .speaker .feature {
         width: 100%
     }
@@ -347,6 +360,10 @@ ul.footer-menu li a:hover {
     .hero-header {
         padding: 3em 1em 1em 1em;
         text-align: center;
+    }
+    .tickets .detail {
+      width: 90%;
+      margin: auto;
     }
     .speaker .feature {
         width: 49%;
