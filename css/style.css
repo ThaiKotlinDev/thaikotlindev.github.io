@@ -376,6 +376,9 @@ ul.footer-menu li a:hover {
 .pricing .content ul li {
   padding: 10px 20px;
 }
+.pricing .content ul li .highlight {
+  color: #fcd93b;
+}
 .pricing .content ul li:nth-child(2n) {
   background: #f3f3f3;
 }
