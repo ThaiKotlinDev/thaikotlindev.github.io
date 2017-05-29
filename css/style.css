@@ -24,19 +24,18 @@ a:hover, a:focus, a:active, a:visited {
   position: relative;
 }
 .strikethrough:before {
-  position: absolute;
-  content: "";
-  left: 0;
-  top: 50%;
-  right: 0;
-  border-top: 1px solid;
-  border-color: inherit;
-  
-  -webkit-transform:rotate(-5deg);
-  -moz-transform:rotate(-5deg);
-  -ms-transform:rotate(-5deg);
-  -o-transform:rotate(-5deg);
-  transform:rotate(-5deg);
+    position: absolute;
+    content: "";
+    left: -10px;
+    top: 50%;
+    right: -10px;
+    border-top: 2px solid;
+    border-color: inherit;
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    transform: rotate(-10deg);
 }
 /* Buttons override */
 .btn {
