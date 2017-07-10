@@ -1,416 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Thailand Kotlin Developers Community.">
-  <meta name="author" content="Thailand Kotlin Developers">
-  <title>Thailand Kotlin Developers</title>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Thailand Kotlin Developers Community.">
+        <meta name="author" content="Thailand Kotlin Developers">
+        <title>Thailand Kotlin Developers</title>
 
-  <!-- Social Media tag Starts -->
-  <!-- Place this data between the <head> tags of your website -->
-  <!-- Open Graph data -->
-  <meta property="og:title" content="Kotlin Programming Language">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://thaikotlindev.github.io/">
-  <meta property="og:image" content="https://thaikotlindev.github.io/images/kotlin_800x320.png">
-  <meta property="og:description"
-        content="Kotlin is a statically typed programming language for the JVM, Android and the browser, 100% interoperable with Java">
-  <meta property="og:site_name" content="Kotlin">
+        <!-- Social Media tag Starts -->
+        <!-- Place this data between the <head> tags of your website -->
+        <!-- Open Graph data -->
+        <meta property="og:title" content="Kotlin Programming Language">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://thaikotlindev.github.io/">
+        <meta property="og:image" content="https://thaikotlindev.github.io/images/kotlin_800x320.png">
+        <meta property="og:description"
+              content="Kotlin is a statically typed programming language for the JVM, Android and the browser, 100% interoperable with Java">
+        <meta property="og:site_name" content="Kotlin">
 
-  <!-- Twitter Card data -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@kotlin">
-  <meta name="twitter:title" content="Kotlin Programming Language">
-  <meta name="twitter:description"
-        content="Kotlin is a statically typed programming language for the JVM, Android and the browser, 100% interoperable with Java">
-  <meta name="twitter:image:src" content="https://thaikotlindev.github.io/img/kotlin_800x320.png">
-  <!-- Social Media tag Ends -->
+        <!-- Twitter Card data -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@kotlin">
+        <meta name="twitter:title" content="Kotlin Programming Language">
+        <meta name="twitter:description"
+              content="Kotlin is a statically typed programming language for the JVM, Android and the browser, 100% interoperable with Java">
+        <meta name="twitter:image:src" content="https://thaikotlindev.github.io/img/kotlin_800x320.png">
+        <!-- Social Media tag Ends -->
 
-  <!-- Bootstrap -->
-  <link rel="Shortcut Icon" href="/images/favicon.ico" type="image/x-icon">
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
-  <link href="css/themify-icons.css" rel="stylesheet">
-  <link href='css/dosis-font.css' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css"/>
+        <!-- Bootstrap -->
+        <link rel="Shortcut Icon" href="/images/favicon.ico" type="image/x-icon">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/themify-icons.css" rel="stylesheet">
+        <link href='css/dosis-font.css' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css"/>
 
-  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <![endif]-->
-</head>
-<body id="page-top" data-spy="scroll" data-target=".side-menu">
-<nav class="side-menu">
-  <ul>
-    <li class="hidden active">
-      <a class="page-scroll" href="#page-top"></a>
-    </li>
-    <li>
-      <a href="#kotlin" class="page-scroll">
-        <span class="menu-title">Hello Kotlin</span>
-        <span class="dot"></span>
-      </a>
-    </li>
-    <li>
-      <a href="#staff" class="page-scroll">
-        <span class="menu-title">Staff</span>
-        <span class="dot"></span>
-      </a>
-    </li>
-    <li>
-      <a href="#next-event" class="page-scroll">
-        <span class="menu-title">Next Event</span>
-        <span class="dot"></span>
-      </a>
-    </li>
-    <li>
-      <a href="#events" class="page-scroll">
-        <span class="menu-title">Events</span>
-        <span class="dot"></span>
-      </a>
-    </li>
-    <li>
-      <a href="#sponsorship" class="page-scroll">
-        <span class="menu-title">Sponsorship</span>
-        <span class="dot"></span>
-      </a>
-    </li>
-  </ul>
-</nav>
-<div class="container-fluid">
-  <!-- Start: Header -->
-  <div class="row hero-header" id="kotlin">
-    <div class="col-md-9">
-      <img src="images/meetup-logo.png" class="logo">
-      <h1>Attend the most awaited <strong>Kotlin</strong> workshop of 2017</h1>
-      <h3>to boost up your skill!</h3>
-      <h4>August, 2017</h4>
-      <a href="#next-event" class="btn btn-lg btn-red page-scroll">More Detail
-        <span class="ti-arrow-right"></span></a>
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body id="page-top" data-spy="scroll" data-target=".side-menu">
 
-    </div>
-    <div class="col-md-3 hidden-xs">
-      <img src="images/android_kotlin_flag.png" class="rocket animated bounce">
-    </div>
-  </div>
-  <!-- End: Header -->
-</div>
-<div class="container">
-  <!-- Start: Desc -->
-  <div class="row me-row content-ct">
-    <h2 class="row-title">Why Kotlin Is Super Cool?</h2>
-    <div class="col-md-3 feature">
-      <span class="ti-stats-up"></span>
-      <h3>Productivity</h3>
-      <p>Some people say Kotlin is like Java on steroid, it can do all the stuff Java can do, plus
-        varieties of language features will boost your productivity like never before.</p>
-    </div>
-    <div class="col-md-3 feature">
-      <span class="ti-check"></span>
-      <h3>Interoperable</h3>
-      <p>Kotlin is statically typed, modern and mature. It was designed with Java interoperability
-        in mind so you can write Kotlin everywhere Java goes, seamlessly, side by side.
-        <br/>All those libraries written in Java over the past 20 years are still work.</p>
-    </div>
-    <div class="col-md-3 feature">
-      <span class="ti-world"></span>
-      <h3>Versatile</h3>
-      <p>Kotlin has great tooling support. Why? Because it was created by JetBrains, the people who
-        built IntelliJ which Android Studio is based on, and
-        <br/>we love Android Studio.</p>
-    </div>
-    <div class="col-md-3 feature">
-      <span class="ti-android"></span>
-      <h3>First-class citizen</h3>
-      <p>Recently in IO ’17, Google announced a first class support for Kotlin in Android
-        development.
-        <br/>People went crazy about this. There are tons of videos and articles about
-        Kotlin all over the internet.
-        <br/>All the cool kids these day write Kotlin, so why don’t
-        you.</p>
-    </div>
-  </div>
-  <!-- End: Desc -->
+        <div id="app"></div>
 
-  <!-- Start: Speakers -->
-  <div class="row me-row content-ct speaker" id="staff">
-    <h2 class="row-title">Meet the Staff</h2>
-    <div class="col-md-4 col-sm-6 feature">
-      <img src="images/stuff/verachad.jpg" class="speaker-img">
-      <h3>Birth</h3>
-      <p>Senior Android Developer @ Agoda</p>
-      <ul class="speaker-social">
-        <li><a href="https://github.com/verachadW" target="_blank"><span
-            class="ti-github"></span></a></li>
-        <li><a href="https://twitter.com/verachadw" target="_blank"><span
-            class="ti-twitter-alt"></span></a></li>
-        <li><a href="https://www.linkedin.com/in/verachadw/" target="_blank"><span
-            class="ti-linkedin"></span></a></li>
-      </ul>
-    </div>
-    <div class="col-md-4 col-sm-6 feature">
-      <img src="images/stuff/dew.jpg" class="speaker-img">
-      <h3>Dew</h3>
-      <p>Mobile Developer @ Santora Nakama & YesMom, Co-Founder/Editor at Black Lens Publication</p>
-      <ul class="speaker-social">
-        <li><a href="http://blacklenspub.com/" target="_blank"><span class="ti-world"></span></a>
-        </li>
-        <li><a href="https://github.com/dewparin" target="_blank"><span class="ti-github"></span></a>
-        <li><a href="https://medium.com/@dewparin" target="_blank"><span class="ti-marker-alt"></span></a>
-        </li>
-        <li><a href="https://twitter.com/dewparin" target="_blank"><span
-            class="ti-twitter-alt"></span></a></li>
-      </ul>
-    </div>
-    <div class="col-md-4 col-sm-6 feature">
-      <img src="images/stuff/travisp.jpg" class="speaker-img">
-      <h3>Travis P</h3>
-      <p>Kotlin God @ Appsynth, Co-Founder/Editor at Black Lens Publication</p>
-      <ul class="speaker-social">
-        <li><a href="http://blacklenspub.com/" target="_blank"><span class="ti-world"></span></a>
-        </li>
-        <li><a href="https://github.com/travisp101" target="_blank"><span class="ti-github"></span></a>
-        </li>
-        <li><a href="https://www.facebook.com/travisp101" target="_blank"><span
-            class="ti-facebook"></span></a></li>
-        <li><a href="https://twitter.com/travisp101" target="_blank"><span
-            class="ti-twitter-alt"></span></a></li>
-      </ul>
-    </div>
-    <div class="col-md-4 col-sm-6 feature">
-      <img src="images/stuff/pop.jpg" class="speaker-img">
-      <h3>Pop</h3>
-      <p>Android ❤ Kotlin @ ShopSpot</p>
-      <ul class="speaker-social">
-        <li><a href="https://github.com/minibugdev" target="_blank"><span class="ti-github"></span></a>
-        </li>
-        <li><a href="https://www.facebook.com/teeranai.b" target="_blank"><span
-            class="ti-facebook"></span></a></li>
-        <li><a href="https://www.linkedin.com/in/teeranaib/" target="_blank"><span
-            class="ti-linkedin"></span></a></li>
-      </ul>
-    </div>
-    <div class="col-md-4 col-sm-6 feature">
-      <img src="images/stuff/babe.jpg" class="speaker-img">
-      <h3>Babe</h3>
-      <p>Kotlinian @ Genxas</p>
-      <ul class="speaker-social">
-        <li><a href="https://github.com/babedev" target="_blank"><span class="ti-github"></span></a>
-        </li>
-        <li><a href="https://medium.com/@babedev" target="_blank"><span
-            class="ti-marker-alt"></span></a></li>
-        <li><a href="https://www.facebook.com/babedev" target="_blank"><span
-            class="ti-facebook"></span></a></li>
-      </ul>
-    </div>
-    <div class="col-md-4 col-sm-6 feature">
-      <img src="images/stuff/ju.jpg" class="speaker-img">
-      <h3>Ju</h3>
-      <p>Developer & Drummer</p>
-      <ul class="speaker-social">
-        <li><a href="https://github.com/judrummer" target="_blank"><span
-            class="ti-github"></span></a></li>
-        <li><a href="https://www.youtube.com/c/JuDrummer" target="_blank"><span
-            class="ti-youtube"></span></a></li>
-        <li><a href="https://www.facebook.com/judrummer" target="_blank"><span
-            class="ti-facebook"></span></a></li>
-      </ul>
-    </div>
-    <div class="col-md-4 col-sm-6 feature">
-      <img src="images/stuff/air.jpg" class="speaker-img">
-      <h3>Air</h3>
-      <p>Android Developer @Agoda</p>
-    </div>
-    <div class="col-md-4 col-sm-6 feature">
-      <img src="images/stuff/tow.jpg" class="speaker-img">
-      <h3>Tow</h3>
-      <p>Freelance Android Developer</p>
-    </div>
-  </div>
-  <!-- End: Speakers -->
-</div>
+        <script src="public/kotlin.js"></script>
+        <script src="public/output.js"></script>
 
-<!-- Start: Tickets -->
-<div class="container-fluid tickets" id="next-event">
-  <div class="row me-row content-ct">
-    <h2 class="row-title">Kotlin Workshop</h2>
-    <div class="col-md-12 col-sm-12">
-      <h2>Ticket</h2>
-      <p class="price">0 THB</p>
-      <div class="detail">
-        <h3>Everything you need to know about writing <i>Android</i> apps in <strong>Kotlin</strong>.<br/>
-          The workshop has 4 sessions.</h3>
-        <ul>
-          <li class="text-left">Intro to Kotlin</li>
-          <li class="text-left">Kotlin for Android Workshop</li>
-          <li class="text-left">Workshop: Miracle of stdLib</li>
-          <li class="text-left">Non-JVM Kotlin</li>
-        </ul>
-      </div>
-      <br/>
-      <br/>
-      <!--<a href="#" class="btn btn-lg btn-red">Buy-->
-        <!--<small>(6 remaining)</small>-->
-      <!--</a>-->
-    </div>
-  </div>
-</div>
-<!-- End: Tickets -->
-
-<!-- Start: Event -->
-<div class="container">
-  <div class="row me-row schedule" id="events">
-    <h2 class="row-title content-ct">Past Events</h2>
-    <div class="col-md-12">
-      <!-- Nav tabs -->
-      <ul class="nav nav-tabs" role="tablist">
-        <li role="presentation" class="active">
-          <a href="#meetup1" aria-controls="meetup1" role="tab" data-toggle="tab">Kotlin Meetup
-            #1</a>
-        </li>
-        <li role="presentation">
-          <a href="#kotlin-bkk" aria-controls="kotlin-bkk" role="tab" data-toggle="tab">Kotlin 1.1
-            Event BKK</a>
-        </li>
-      </ul>
-
-      <!-- Tab panes -->
-      <div class="tab-content">
-        <div role="tabpanel" class="tab-pane fade in active" id="meetup1">
-          <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-3">
-              <a data-fancybox="meetup1" href="images/meetup/01.jpg">
-                <img class="img-responsive" src="images/meetup/t01.jpg" alt="Kotlin Meetuo #1">
-              </a>
-            </div>
-            <div class="col-xs-12  col-sm-6 col-md-3">
-              <a data-fancybox="meetup1" href="images/meetup/02.jpg">
-                <img class="img-responsive" src="images/meetup/t02.jpg" alt="Kotlin Meetuo #1">
-              </a>
-            </div>
-            <div class="col-xs-12  col-sm-6 col-md-3">
-              <a data-fancybox="meetup1" href="images/meetup/03.jpg">
-                <img class="img-responsive" src="images/meetup/t03.jpg" alt="Kotlin Meetuo #1">
-              </a>
-            </div>
-            <div class="col-xs-12  col-sm-6 col-md-3">
-              <a data-fancybox="meetup1" href="images/meetup/04.jpg">
-                <img class="img-responsive" src="images/meetup/t04.jpg" alt="Kotlin Meetuo #1">
-              </a>
-            </div>
-          </div>
-        </div>
-        <div role="tabpanel" class="tab-pane fade" id="kotlin-bkk">
-          <div class="row">
-            <div class="col-xs-12  col-sm-6 col-md-3">
-              <a data-fancybox="kotlinbkk" href="images/kotlinbkk/01.jpg">
-                <img class="img-responsive" src="images/kotlinbkk/t01.jpg"
-                     alt="Kotlin 1.1 Event BKK">
-              </a>
-            </div>
-            <div class="col-xs-12  col-sm-6 col-md-3">
-              <a data-fancybox="kotlinbkk" href="images/kotlinbkk/02.jpg">
-                <img class="img-responsive" src="images/kotlinbkk/t02.jpg"
-                     alt="Kotlin 1.1 Event BKK">
-              </a>
-            </div>
-            <div class="col-xs-12  col-sm-6 col-md-3">
-              <a data-fancybox="kotlinbkk" href="images/kotlinbkk/03.jpg">
-                <img class="img-responsive" src="images/kotlinbkk/t03.jpg"
-                     alt="Kotlin 1.1 Event BKK">
-              </a>
-            </div>
-            <div class="col-xs-12  col-sm-6 col-md-3">
-              <a data-fancybox="kotlinbkk" href="images/kotlinbkk/04.jpg">
-                <img class="img-responsive" src="images/kotlinbkk/t04.jpg"
-                     alt="Kotlin 1.1 Event BKK">
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- End: Event -->
-
-<!-- Start: Footer -->
-<div class="container-fluid footer" id="sponsorship">
-  <div class="row contact content-ct">
-    <h2 class="row-title">Sponsorship</h2>
-    <div class="col-md-12 col-sm-12">
-      <div class='pricing'>
-        <div class='thumbnail'>
-          <div class='ti-medall'></div>
-        </div>
-        <div class='title'>Gold</div>
-        <div class='content'>
-          <div class='sub-title'>4,000 THB</div>
-          <ul>
-            <li><i>1</i> seat guaranteed</li>
-            <li><i>Small</i> logo on a backdrop</li>
-          </ul>
-        </div>
-      </div>
-      <div class='pricing'>
-        <div class='thumbnail'>
-          <div class='ti-cup'></div>
-        </div>
-        <div class='title'>Platinum</div>
-        <div class='content'>
-          <div class='sub-title'>5,000 THB</div>
-          <ul>
-            <li><strong>2</strong> seats guaranteed</li>
-            <li><strong>Big</strong> logo on a backdrop</li>
-          </ul>
-        </div>
-      </div>
-      <div class='pricing'>
-        <div class='thumbnail'>
-          <div class='ti-crown'></div>
-        </div>
-        <div class='title'>Diamond</div>
-        <div class='content'>
-          <div class='sub-title'>10,000 THB</div>
-          <ul>
-            <li><strong>2</strong> seats guaranteed</li>
-            <li><strong>Big</strong> logo on a backdrop</li>
-            <li><strong>Logo on presentation slides
-            <span class="highlight"><br />* The slides will be available for download on the internet until the end of time</span></strong></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row footer-credit">
-    <div class="col-md-6 col-sm-6">
-      <p>&copy; 2017, <a href="https://thaikotlindev.github.io">Thailand Kotlin Developer</a> | All rights
-        reserved.</p>
-    </div>
-    <div class="col-md-6 col-sm-6">
-      <ul class="footer-menu">
-        <li><a href="https://www.facebook.com/groups/872547279487598/?ref=bookmarks" target="_blank">
-          <i class="ti-facebook"></i> Facebook Group</a></li>
-        <li><a href="mailto:thaikotlindev@gmail.com" target="_blank">
-          <i class="ti-email"></i> Contact Us</a></li>
-      </ul>
-    </div>
-  </div>
-</div>
-<!-- End: Footer -->
-
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="js/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.easing.min.js"></script>
-<script src="js/scrolling-nav.js"></script>
-<script
-    src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
-</body>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="js/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.easing.min.js"></script>
+        <script src="js/scrolling-nav.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
+    </body>
 </html>
