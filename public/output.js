@@ -3,34 +3,35 @@ if (typeof kotlin === 'undefined') {
 }
 var output = function (_, Kotlin) {
   'use strict';
+  var ensureNotNull = Kotlin.ensureNotNull;
+  var Unit = Kotlin.kotlin.Unit;
   var addClass = Kotlin.kotlin.dom.addClass_hhb33f$;
   var appendText = Kotlin.kotlin.dom.appendText_46n0ku$;
+  var Kind_CLASS = Kotlin.Kind.CLASS;
   var listOf = Kotlin.kotlin.collections.listOf_i5x0yv$;
   var mutableListOf = Kotlin.kotlin.collections.mutableListOf_i5x0yv$;
-  var Enum = Kotlin.kotlin.Enum;
   var to = Kotlin.kotlin.to_ujzrz7$;
-  var mapOf_0 = Kotlin.kotlin.collections.mapOf_x2b85n$;
-  var mapOf_1 = Kotlin.kotlin.collections.mapOf_qfcya0$;
+  var mapOf = Kotlin.kotlin.collections.mapOf_x2b85n$;
+  var mapOf_0 = Kotlin.kotlin.collections.mapOf_qfcya0$;
+  var Enum = Kotlin.kotlin.Enum;
+  var throwISE = Kotlin.throwISE;
   ContactType.prototype = Object.create(Enum.prototype);
   ContactType.prototype.constructor = ContactType;
   function app(id, child) {
     if (id === void 0)
       id = 'app';
-    var tmp$;
-    var app_0 = (tmp$ = document.getElementById(id)) != null ? tmp$ : Kotlin.throwNPE();
-    child(new Child(app_0));
-    return app_0;
+    var app = ensureNotNull(document.getElementById(id));
+    child(new Child(app));
+    return app;
   }
   function div(id, child) {
-    var tmp$;
-    var app_0 = (tmp$ = document.getElementById(id)) != null ? tmp$ : Kotlin.throwNPE();
-    child(new Child(app_0));
-    return app_0;
+    var app = ensureNotNull(document.getElementById(id));
+    child(new Child(app));
+    return app;
   }
   function empty(id) {
-    var tmp$;
-    var div_0 = (tmp$ = document.getElementById(id)) != null ? tmp$ : Kotlin.throwNPE();
-    div_0.innerHTML = '';
+    var div = ensureNotNull(document.getElementById(id));
+    div.innerHTML = '';
   }
   function src($receiver, value) {
     if (value === void 0)
@@ -51,49 +52,50 @@ var output = function (_, Kotlin) {
     this.parent = parent;
   }
   function Child$div$lambda($receiver) {
+    return Unit;
   }
-  Child.prototype.div_qf6fe3$ = function (id, className, width_0, attrs, child) {
+  var emptyMap = Kotlin.kotlin.collections.emptyMap_q3lmfv$;
+  var isBlank = Kotlin.kotlin.text.isBlank_gw00vp$;
+  Child.prototype.div_qf6fe3$ = function (id, className, width, attrs, child) {
     if (id === void 0)
       id = '';
     if (className === void 0)
       className = '';
-    if (width_0 === void 0)
-      width_0 = 0;
+    if (width === void 0)
+      width = 0;
     if (attrs === void 0) {
-      attrs = Kotlin.kotlin.collections.emptyMap_q3lmfv$();
+      attrs = emptyMap();
     }
     if (child === void 0)
       child = Child$div$lambda;
-    var div_0 = this.element_0('div');
-    var $receiver = className;
-    if (!Kotlin.kotlin.text.isBlank_gw00vp$($receiver))
-      addClass(div_0, [className]);
-    var $receiver_0 = id;
-    if (!Kotlin.kotlin.text.isBlank_gw00vp$($receiver_0))
-      div_0.id = id;
-    if (width_0 !== 0)
-      div_0.setAttribute('width', width_0.toString() + 'px');
+    var div = this.element_0('div');
+    if (!isBlank(className))
+      addClass(div, [className]);
+    if (!isBlank(id))
+      div.id = id;
+    if (width !== 0)
+      div.setAttribute('width', width.toString() + 'px');
     var tmp$;
     tmp$ = attrs.entries.iterator();
     while (tmp$.hasNext()) {
       var element = tmp$.next();
-      div_0.setAttribute(element.key, element.value);
+      div.setAttribute(element.key, element.value);
     }
-    this.parent.appendChild(div_0);
-    child(new Child(div_0));
-    return div_0;
+    this.parent.appendChild(div);
+    child(new Child(div));
+    return div;
   };
   Child.prototype.nav_9jyg1o$ = function (className, child) {
     if (className === void 0)
       className = '';
     var nav = this.element_0('nav');
-    var $receiver = className;
-    if (!Kotlin.kotlin.text.isBlank_gw00vp$($receiver))
+    if (!isBlank(className))
       addClass(nav, [className]);
     this.parent.appendChild(nav);
     child(new Child(nav));
   };
   function Child$h1$lambda($receiver) {
+    return Unit;
   }
   Child.prototype.h1_tlpz1u$ = function (child) {
     if (child === void 0)
@@ -103,6 +105,7 @@ var output = function (_, Kotlin) {
     child(new Child(h1));
   };
   function Child$h2$lambda($receiver) {
+    return Unit;
   }
   Child.prototype.h2_9jyg1o$ = function (className, child) {
     if (className === void 0)
@@ -115,6 +118,7 @@ var output = function (_, Kotlin) {
     child(new Child(h2));
   };
   function Child$h3$lambda($receiver) {
+    return Unit;
   }
   Child.prototype.h3_tlpz1u$ = function (child) {
     if (child === void 0)
@@ -124,6 +128,7 @@ var output = function (_, Kotlin) {
     child(new Child(h3));
   };
   function Child$h4$lambda($receiver) {
+    return Unit;
   }
   Child.prototype.h4_tlpz1u$ = function (child) {
     if (child === void 0)
@@ -132,12 +137,12 @@ var output = function (_, Kotlin) {
     this.parent.appendChild(h4);
     child(new Child(h4));
   };
-  Child.prototype.p_puj7f4$ = function (className, text_0) {
+  Child.prototype.p_puj7f4$ = function (className, text) {
     if (className === void 0)
       className = '';
     var p = this.element_0('p');
     addClass(p, [className]);
-    appendText(p, text_0);
+    appendText(p, text);
     this.parent.appendChild(p);
   };
   Child.prototype.p_9jyg1o$ = function (className, child) {
@@ -153,38 +158,39 @@ var output = function (_, Kotlin) {
     this.parent.appendChild(strong);
     child(new Child(strong));
   };
-  Child.prototype.strong_61zpoe$ = function (text_0) {
-    if (text_0 === void 0)
-      text_0 = '';
+  Child.prototype.strong_61zpoe$ = function (text) {
+    if (text === void 0)
+      text = '';
     var strong = this.element_0('strong');
-    appendText(strong, text_0);
+    appendText(strong, text);
     this.parent.appendChild(strong);
   };
-  Child.prototype.italic_puj7f4$ = function (className, text_0) {
+  Child.prototype.italic_puj7f4$ = function (className, text) {
     if (className === void 0)
       className = '';
-    if (text_0 === void 0)
-      text_0 = '';
+    if (text === void 0)
+      text = '';
     var italic = this.element_0('i');
     addClass(italic, [className]);
-    appendText(italic, text_0);
+    appendText(italic, text);
     this.parent.appendChild(italic);
   };
   function Child$link$lambda($receiver) {
+    return Unit;
   }
-  Child.prototype.link_hsosmf$ = function (to_0, className, attrs, child) {
-    if (to_0 === void 0)
-      to_0 = '';
+  Child.prototype.link_hsosmf$ = function (to, className, attrs, child) {
+    if (to === void 0)
+      to = '';
     if (className === void 0)
       className = '';
     if (attrs === void 0) {
-      attrs = Kotlin.kotlin.collections.emptyMap_q3lmfv$();
+      attrs = emptyMap();
     }
     if (child === void 0)
       child = Child$link$lambda;
     var a = this.element_0('a');
     addClass(a, [className]);
-    a.setAttribute('href', to_0);
+    a.setAttribute('href', to);
     var tmp$;
     tmp$ = attrs.entries.iterator();
     while (tmp$.hasNext()) {
@@ -195,12 +201,15 @@ var output = function (_, Kotlin) {
     child(new Child(a));
   };
   function Child$a$lambda() {
+    return Unit;
   }
   function Child$a$lambda_0($receiver) {
+    return Unit;
   }
   function Child$a$lambda_1(closure$onclick) {
     return function (it) {
       closure$onclick();
+      return Unit;
     };
   }
   Child.prototype.a_wrtstz$ = function (id, className, onclick, child) {
@@ -213,40 +222,36 @@ var output = function (_, Kotlin) {
     if (child === void 0)
       child = Child$a$lambda_0;
     var a = this.element_0('a');
-    var $receiver = id;
-    if (!Kotlin.kotlin.text.isBlank_gw00vp$($receiver))
+    if (!isBlank(id))
       a.id = id;
-    var $receiver_0 = className;
-    if (!Kotlin.kotlin.text.isBlank_gw00vp$($receiver_0))
+    if (!isBlank(className))
       addClass(a, [className]);
     a.addEventListener('click', Child$a$lambda_1(onclick));
     this.parent.appendChild(a);
     child(new Child(a));
   };
   function Child$img$lambda($receiver) {
+    return Unit;
   }
-  Child.prototype.img_lmu3us$ = function (id, className, src_0, block) {
+  Child.prototype.img_lmu3us$ = function (id, className, src, block) {
     if (id === void 0)
       id = '';
     if (className === void 0)
       className = '';
-    if (src_0 === void 0)
-      src_0 = '';
+    if (src === void 0)
+      src = '';
     if (block === void 0)
       block = Child$img$lambda;
     var $receiver = this.element_0('img');
-    var closure$id = id;
-    var closure$className = className;
-    var closure$src = src_0;
-    var closure$block = block;
-    $receiver.id = closure$id;
-    addClass($receiver, [closure$className]);
-    $receiver.setAttribute('src', closure$src);
-    closure$block($receiver);
+    $receiver.id = id;
+    addClass($receiver, [className]);
+    $receiver.setAttribute('src', src);
+    block($receiver);
     var img = $receiver;
     this.parent.appendChild(img);
   };
   function Child$span$lambda($receiver) {
+    return Unit;
   }
   Child.prototype.span_9jyg1o$ = function (className, child) {
     if (className === void 0)
@@ -258,10 +263,10 @@ var output = function (_, Kotlin) {
     this.parent.appendChild(span);
     child(new Child(span));
   };
-  Child.prototype.text_61zpoe$ = function (text_0) {
-    if (text_0 === void 0)
-      text_0 = '';
-    this.parent.appendChild(document.createTextNode(text_0));
+  Child.prototype.text_61zpoe$ = function (text) {
+    if (text === void 0)
+      text = '';
+    this.parent.appendChild(document.createTextNode(text));
   };
   Child.prototype.br = function () {
     this.parent.appendChild(this.element_0('br'));
@@ -293,8 +298,7 @@ var output = function (_, Kotlin) {
     if (id === void 0)
       id = '';
     var editText = this.element_0('input');
-    var $receiver = id;
-    if (!Kotlin.kotlin.text.isBlank_gw00vp$($receiver))
+    if (!isBlank(id))
       editText.id = id;
     addClass(editText, ['input']);
     editText.setAttribute('type', 'text');
@@ -304,10 +308,11 @@ var output = function (_, Kotlin) {
   function Child$button$lambda(closure$onclick) {
     return function (it) {
       closure$onclick();
+      return Unit;
     };
   }
-  Child.prototype.button_a4mwiz$ = function (text_0, onclick) {
-    var button = appendText(this.element_0('button'), text_0);
+  Child.prototype.button_a4mwiz$ = function (text, onclick) {
+    var button = appendText(this.element_0('button'), text);
     button.className = 'button is-info';
     button.addEventListener('click', Child$button$lambda(onclick));
     this.parent.appendChild(button);
@@ -316,13 +321,744 @@ var output = function (_, Kotlin) {
     return document.createElement(name);
   };
   Child.$metadata$ = {
-    kind: Kotlin.Kind.CLASS,
+    kind: Kind_CLASS,
     simpleName: 'Child',
     interfaces: []
   };
   var menus;
   var features;
   var staffs;
+  function main$lambda$lambda$lambda$lambda($receiver) {
+    $receiver.a_wrtstz$('page-scroll');
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda(closure$it) {
+    return function ($receiver) {
+      $receiver.text_61zpoe$(closure$it.title);
+      return Unit;
+    };
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda(closure$it) {
+    return function ($receiver) {
+      $receiver.span_9jyg1o$('menu-title', main$lambda$lambda$lambda$lambda$lambda$lambda$lambda(closure$it));
+      $receiver.span_9jyg1o$('dot');
+      return Unit;
+    };
+  }
+  function main$lambda$lambda$lambda$lambda$lambda(closure$it) {
+    return function ($receiver) {
+      $receiver.link_hsosmf$(closure$it.anchor, 'page-scroll', void 0, main$lambda$lambda$lambda$lambda$lambda$lambda(closure$it));
+      return Unit;
+    };
+  }
+  function main$lambda$lambda$lambda($receiver) {
+    $receiver.li_7jt3u2$('hidden active', void 0, main$lambda$lambda$lambda$lambda);
+    var tmp$;
+    tmp$ = menus.iterator();
+    while (tmp$.hasNext()) {
+      var element = tmp$.next();
+      $receiver.li_7jt3u2$(void 0, void 0, main$lambda$lambda$lambda$lambda$lambda(element));
+    }
+    return Unit;
+  }
+  function main$lambda$lambda($receiver) {
+    $receiver.ul_7jt3u2$(void 0, void 0, main$lambda$lambda$lambda);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda_0($receiver) {
+    $receiver.text_61zpoe$('Kotlin Meet Up 1.2.61');
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda_1($receiver) {
+    $receiver.text_61zpoe$('18:00 - 21:00 @ Learn Hub');
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda_2($receiver) {
+    $receiver.text_61zpoe$('18 October, 2018');
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda_3($receiver) {
+    $receiver.text_61zpoe$('More Detail');
+    $receiver.span_9jyg1o$('ti-arrow-right');
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda_0($receiver) {
+    $receiver.h1_tlpz1u$(main$lambda$lambda$lambda$lambda$lambda_0);
+    $receiver.h3_tlpz1u$(main$lambda$lambda$lambda$lambda$lambda_1);
+    $receiver.h4_tlpz1u$(main$lambda$lambda$lambda$lambda$lambda_2);
+    $receiver.link_hsosmf$('#next-event', 'btn btn-lg btn-red page-scroll', void 0, main$lambda$lambda$lambda$lambda$lambda_3);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda_1($receiver) {
+    $receiver.img_lmu3us$(void 0, 'rocket animated bounce', 'images/android_kotlin_flag.png');
+    return Unit;
+  }
+  function main$lambda$lambda$lambda_0($receiver) {
+    $receiver.div_qf6fe3$(void 0, 'col-md-9', void 0, void 0, main$lambda$lambda$lambda$lambda_0);
+    $receiver.div_qf6fe3$(void 0, 'col-md-3 hidden-xs', void 0, void 0, main$lambda$lambda$lambda$lambda_1);
+    return Unit;
+  }
+  function main$lambda$lambda_0($receiver) {
+    $receiver.div_qf6fe3$('kotlin', 'row hero-header', void 0, void 0, main$lambda$lambda$lambda_0);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda_2($receiver) {
+    $receiver.text_61zpoe$('Why Kotlin Is Super Cool?');
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda_0(closure$it) {
+    return function ($receiver) {
+      $receiver.text_61zpoe$(closure$it.title);
+      return Unit;
+    };
+  }
+  function main$lambda$lambda$lambda$lambda$lambda_4(closure$it) {
+    return function ($receiver) {
+      $receiver.span_9jyg1o$(closure$it.logo);
+      $receiver.h3_tlpz1u$(main$lambda$lambda$lambda$lambda$lambda$lambda_0(closure$it));
+      $receiver.p_puj7f4$(void 0, closure$it.detail);
+      return Unit;
+    };
+  }
+  function main$lambda$lambda$lambda_1($receiver) {
+    $receiver.h2_9jyg1o$('row-title', main$lambda$lambda$lambda$lambda_2);
+    var tmp$;
+    tmp$ = features.iterator();
+    while (tmp$.hasNext()) {
+      var element = tmp$.next();
+      $receiver.div_qf6fe3$(void 0, 'col-md-3 feature', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda_4(element));
+    }
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda_3($receiver) {
+    $receiver.text_61zpoe$('Meet the Staff');
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda_1(closure$it) {
+    return function ($receiver) {
+      $receiver.text_61zpoe$(closure$it.name);
+      return Unit;
+    };
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda(closure$it) {
+    return function ($receiver) {
+      $receiver.span_9jyg1o$(closure$it.type.logo);
+      return Unit;
+    };
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda(closure$it) {
+    return function ($receiver) {
+      $receiver.link_hsosmf$(closure$it.link, void 0, mapOf(to('target', '_blank')), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda(closure$it));
+      return Unit;
+    };
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda_2(closure$it) {
+    return function ($receiver) {
+      var tmp$;
+      tmp$ = closure$it.contacts.iterator();
+      while (tmp$.hasNext()) {
+        var element = tmp$.next();
+        $receiver.li_7jt3u2$(void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda(element));
+      }
+      return Unit;
+    };
+  }
+  function main$lambda$lambda$lambda$lambda$lambda_5(closure$it) {
+    return function ($receiver) {
+      $receiver.img_lmu3us$(void 0, 'speaker-img', 'images/staff/' + closure$it.image);
+      $receiver.h3_tlpz1u$(main$lambda$lambda$lambda$lambda$lambda$lambda_1(closure$it));
+      $receiver.p_puj7f4$(void 0, closure$it.position);
+      $receiver.ul_7jt3u2$('speaker-social', void 0, main$lambda$lambda$lambda$lambda$lambda$lambda_2(closure$it));
+      return Unit;
+    };
+  }
+  function main$lambda$lambda$lambda_2($receiver) {
+    $receiver.h2_9jyg1o$('row-title', main$lambda$lambda$lambda$lambda_3);
+    var tmp$;
+    tmp$ = staffs.iterator();
+    while (tmp$.hasNext()) {
+      var element = tmp$.next();
+      $receiver.div_qf6fe3$(void 0, 'col-md-4 col-sm-6 feature', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda_5(element));
+    }
+    return Unit;
+  }
+  function main$lambda$lambda_1($receiver) {
+    $receiver.div_qf6fe3$(void 0, 'row me-row content-ct', void 0, void 0, main$lambda$lambda$lambda_1);
+    $receiver.div_qf6fe3$('staff', 'row me-row content-ct speaker', void 0, void 0, main$lambda$lambda$lambda_2);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda_4($receiver) {
+    $receiver.text_61zpoe$('Kotlin Meet Up 1.2.61');
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda_6($receiver) {
+    $receiver.text_61zpoe$('Ticket');
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda_3($receiver) {
+    $receiver.text_61zpoe$('Everything you need to know about writing ');
+    $receiver.italic_puj7f4$('Android');
+    $receiver.text_61zpoe$(' apps in ');
+    $receiver.strong_61zpoe$('Kotlin');
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_0($receiver) {
+    $receiver.text_61zpoe$('Coroutines by TBD');
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_1($receiver) {
+    $receiver.text_61zpoe$('Create View-based Android apps with Conductor by Kittinun Vantasin, Mobile developer @ Mercari');
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda_4($receiver) {
+    $receiver.li_7jt3u2$('text-left', void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_0);
+    $receiver.li_7jt3u2$('text-left', void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_1);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda_7($receiver) {
+    $receiver.h3_tlpz1u$(main$lambda$lambda$lambda$lambda$lambda$lambda_3);
+    $receiver.ul_7jt3u2$(void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda_4);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda_5($receiver) {
+    $receiver.h2_9jyg1o$(void 0, main$lambda$lambda$lambda$lambda$lambda_6);
+    $receiver.p_puj7f4$('price', 'Free');
+    $receiver.div_qf6fe3$(void 0, 'detail', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda_7);
+    $receiver.br();
+    $receiver.br();
+    return Unit;
+  }
+  function main$lambda$lambda$lambda_3($receiver) {
+    $receiver.h2_9jyg1o$('row-title', main$lambda$lambda$lambda$lambda_4);
+    $receiver.div_qf6fe3$(void 0, 'col-md-12 col-sm-12', void 0, void 0, main$lambda$lambda$lambda$lambda_5);
+    return Unit;
+  }
+  function main$lambda$lambda_2($receiver) {
+    $receiver.div_qf6fe3$(void 0, 'row me-row content-ct', void 0, void 0, main$lambda$lambda$lambda_3);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda_6($receiver) {
+    $receiver.text_61zpoe$('Past Events');
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_2($receiver) {
+    $receiver.text_61zpoe$('Kotlin Meetup #1');
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda_5($receiver) {
+    $receiver.link_hsosmf$('#meetup1', void 0, mapOf_0([to('aria-controls', 'meetup1'), to('role', 'tab'), to('data-toggle', 'tab')]), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_2);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_3($receiver) {
+    $receiver.text_61zpoe$('Kotlin 1.1');
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda_6($receiver) {
+    $receiver.link_hsosmf$('#kotlin-bkk', void 0, mapOf_0([to('aria-controls', 'kotlin-bkk'), to('role', 'tab'), to('data-toggle', 'tab')]), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_3);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_4($receiver) {
+    $receiver.text_61zpoe$('Kotlin Workshop');
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda_7($receiver) {
+    $receiver.link_hsosmf$('#kotlin-workshop', void 0, mapOf_0([to('aria-controls', 'workshop'), to('role', 'tab'), to('data-toggle', 'tab')]), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_4);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_5($receiver) {
+    $receiver.text_61zpoe$('Kotlin 1.2');
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda_8($receiver) {
+    $receiver.link_hsosmf$('#kotlin-1_2', void 0, mapOf_0([to('aria-controls', 'kotlin-1_2'), to('role', 'tab'), to('data-toggle', 'tab')]), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_5);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_6($receiver) {
+    $receiver.text_61zpoe$('Kotlin 1.2.41');
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda_9($receiver) {
+    $receiver.link_hsosmf$('#kotlin-1_2_41', void 0, mapOf_0([to('aria-controls', 'kotlin-1_2_41'), to('role', 'tab'), to('data-toggle', 'tab')]), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_6);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_7($receiver) {
+    $receiver.text_61zpoe$('Mobile Conf 2018');
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda_10($receiver) {
+    $receiver.link_hsosmf$('#mobconf18', void 0, mapOf_0([to('aria-controls', 'mobconf18'), to('role', 'tab'), to('data-toggle', 'tab')]), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_7);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda_8($receiver) {
+    $receiver.li_7jt3u2$('active', 'presentation', main$lambda$lambda$lambda$lambda$lambda$lambda_5);
+    $receiver.li_7jt3u2$(void 0, 'presentation', main$lambda$lambda$lambda$lambda$lambda$lambda_6);
+    $receiver.li_7jt3u2$(void 0, 'presentation', main$lambda$lambda$lambda$lambda$lambda$lambda_7);
+    $receiver.li_7jt3u2$(void 0, 'presentation', main$lambda$lambda$lambda$lambda$lambda$lambda_8);
+    $receiver.li_7jt3u2$(void 0, 'presentation', main$lambda$lambda$lambda$lambda$lambda$lambda_9);
+    $receiver.li_7jt3u2$(void 0, 'presentation', main$lambda$lambda$lambda$lambda$lambda$lambda_10);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_0($receiver) {
+    $receiver.img_lmu3us$(void 0, 'img-responsive', 'images/meetup/t01.jpg');
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_0($receiver) {
+    $receiver.link_hsosmf$('images/meetup/01.jpg', void 0, mapOf(to('data-fancybox', 'meetup1')), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_0);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_1($receiver) {
+    $receiver.img_lmu3us$(void 0, 'img-responsive', 'images/meetup/t02.jpg');
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_1($receiver) {
+    $receiver.link_hsosmf$('images/meetup/02.jpg', void 0, mapOf(to('data-fancybox', 'meetup1')), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_1);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_2($receiver) {
+    $receiver.img_lmu3us$(void 0, 'img-responsive', 'images/meetup/t03.jpg');
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_2($receiver) {
+    $receiver.link_hsosmf$('images/meetup/03.jpg', void 0, mapOf(to('data-fancybox', 'meetup1')), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_2);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_3($receiver) {
+    $receiver.img_lmu3us$(void 0, 'img-responsive', 'images/meetup/t04.jpg');
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_3($receiver) {
+    $receiver.link_hsosmf$('images/meetup/04.jpg', void 0, mapOf(to('data-fancybox', 'meetup1')), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_3);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_8($receiver) {
+    $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_0);
+    $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_1);
+    $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_2);
+    $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_3);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda_11($receiver) {
+    $receiver.div_qf6fe3$(void 0, 'row', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_8);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_4($receiver) {
+    $receiver.img_lmu3us$(void 0, 'img-responsive', 'images/kotlinbkk/t01.jpg');
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_4($receiver) {
+    $receiver.link_hsosmf$('images/kotlinbkk/01.jpg', void 0, mapOf(to('data-fancybox', 'kotlinbkk')), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_4);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_5($receiver) {
+    $receiver.img_lmu3us$(void 0, 'img-responsive', 'images/kotlinbkk/t02.jpg');
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_5($receiver) {
+    $receiver.link_hsosmf$('images/kotlinbkk/02.jpg', void 0, mapOf(to('data-fancybox', 'kotlinbkk')), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_5);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_6($receiver) {
+    $receiver.img_lmu3us$(void 0, 'img-responsive', 'images/kotlinbkk/t03.jpg');
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_6($receiver) {
+    $receiver.link_hsosmf$('images/kotlinbkk/03.jpg', void 0, mapOf(to('data-fancybox', 'kotlinbkk')), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_6);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_7($receiver) {
+    $receiver.img_lmu3us$(void 0, 'img-responsive', 'images/kotlinbkk/t04.jpg');
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_7($receiver) {
+    $receiver.link_hsosmf$('images/kotlinbkk/04.jpg', void 0, mapOf(to('data-fancybox', 'kotlinbkk')), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_7);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_9($receiver) {
+    $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_4);
+    $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_5);
+    $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_6);
+    $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_7);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda_12($receiver) {
+    $receiver.div_qf6fe3$(void 0, 'row', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_9);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_8($receiver) {
+    $receiver.img_lmu3us$(void 0, 'img-responsive', 'images/workshop/workshop_1.jpg');
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_8($receiver) {
+    $receiver.link_hsosmf$('images/workshop/workshop_1.jpg', void 0, mapOf(to('data-fancybox', 'workshop')), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_8);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_9($receiver) {
+    $receiver.img_lmu3us$(void 0, 'img-responsive', 'images/workshop/workshop_2.jpg');
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_9($receiver) {
+    $receiver.link_hsosmf$('images/workshop/workshop_2.jpg', void 0, mapOf(to('data-fancybox', 'workshop')), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_9);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_10($receiver) {
+    $receiver.img_lmu3us$(void 0, 'img-responsive', 'images/workshop/workshop_3.jpg');
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_10($receiver) {
+    $receiver.link_hsosmf$('images/workshop/workshop_3.jpg', void 0, mapOf(to('data-fancybox', 'workshop')), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_10);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_11($receiver) {
+    $receiver.img_lmu3us$(void 0, 'img-responsive', 'images/workshop/workshop_4.jpg');
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_11($receiver) {
+    $receiver.link_hsosmf$('images/workshop/workshop_4.jpg', void 0, mapOf(to('data-fancybox', 'workshop')), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_11);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_10($receiver) {
+    $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_8);
+    $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_9);
+    $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_10);
+    $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_11);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_12($receiver) {
+    $receiver.img_lmu3us$(void 0, 'img-responsive', 'images/workshop/workshop_5.jpg');
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_12($receiver) {
+    $receiver.link_hsosmf$('images/workshop/workshop_5.jpg', void 0, mapOf(to('data-fancybox', 'workshop')), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_12);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_13($receiver) {
+    $receiver.img_lmu3us$(void 0, 'img-responsive', 'images/workshop/workshop_6.jpg');
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_13($receiver) {
+    $receiver.link_hsosmf$('images/workshop/workshop_6.jpg', void 0, mapOf(to('data-fancybox', 'workshop')), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_13);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_14($receiver) {
+    $receiver.img_lmu3us$(void 0, 'img-responsive', 'images/workshop/workshop_7.jpg');
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_14($receiver) {
+    $receiver.link_hsosmf$('images/workshop/workshop_7.jpg', void 0, mapOf(to('data-fancybox', 'workshop')), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_14);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_15($receiver) {
+    $receiver.img_lmu3us$(void 0, 'img-responsive', 'images/workshop/workshop_8.jpg');
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_15($receiver) {
+    $receiver.link_hsosmf$('images/workshop/workshop_8.jpg', void 0, mapOf(to('data-fancybox', 'workshop')), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_15);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_11($receiver) {
+    $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_12);
+    $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_13);
+    $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_14);
+    $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_15);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda_13($receiver) {
+    $receiver.div_qf6fe3$(void 0, 'row', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_10);
+    $receiver.div_qf6fe3$(void 0, 'row', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_11);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_16($receiver) {
+    $receiver.img_lmu3us$(void 0, 'img-responsive', 'images/meetup_1_2/1.jpg');
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_16($receiver) {
+    $receiver.link_hsosmf$('images/meetup_1_2/1.jpg', void 0, mapOf(to('data-fancybox', 'kotlin_1_2')), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_16);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_17($receiver) {
+    $receiver.img_lmu3us$(void 0, 'img-responsive', 'images/meetup_1_2/2.jpg');
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_17($receiver) {
+    $receiver.link_hsosmf$('images/meetup_1_2/2.jpg', void 0, mapOf(to('data-fancybox', 'kotlin_1_2')), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_17);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_18($receiver) {
+    $receiver.img_lmu3us$(void 0, 'img-responsive', 'images/meetup_1_2/3.jpg');
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_18($receiver) {
+    $receiver.link_hsosmf$('images/meetup_1_2/3.jpg', void 0, mapOf(to('data-fancybox', 'kotlin_1_2')), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_18);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_19($receiver) {
+    $receiver.img_lmu3us$(void 0, 'img-responsive', 'images/meetup_1_2/4.jpg');
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_19($receiver) {
+    $receiver.link_hsosmf$('images/meetup_1_2/4.jpg', void 0, mapOf(to('data-fancybox', 'kotlin_1_2')), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_19);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_12($receiver) {
+    $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_16);
+    $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_17);
+    $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_18);
+    $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_19);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda_14($receiver) {
+    $receiver.div_qf6fe3$(void 0, 'row', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_12);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_20($receiver) {
+    $receiver.img_lmu3us$(void 0, 'img-responsive', 'images/meetup_1_2_41/1.jpg');
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_20($receiver) {
+    $receiver.link_hsosmf$('images/meetup_1_2_41/1.jpg', void 0, mapOf(to('data-fancybox', 'kotlin-1_2_41')), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_20);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_21($receiver) {
+    $receiver.img_lmu3us$(void 0, 'img-responsive', 'images/meetup_1_2_41/2.jpg');
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_21($receiver) {
+    $receiver.link_hsosmf$('images/meetup_1_2_41/2.jpg', void 0, mapOf(to('data-fancybox', 'kotlin-1_2_41')), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_21);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_22($receiver) {
+    $receiver.img_lmu3us$(void 0, 'img-responsive', 'images/meetup_1_2_41/3.jpg');
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_22($receiver) {
+    $receiver.link_hsosmf$('images/meetup_1_2_41/3.jpg', void 0, mapOf(to('data-fancybox', 'kotlin-1_2_41')), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_22);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_23($receiver) {
+    $receiver.img_lmu3us$(void 0, 'img-responsive', 'images/meetup_1_2_41/4.jpg');
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_23($receiver) {
+    $receiver.link_hsosmf$('images/meetup_1_2_41/4.jpg', void 0, mapOf(to('data-fancybox', 'kotlin-1_2_41')), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_23);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_13($receiver) {
+    $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_20);
+    $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_21);
+    $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_22);
+    $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_23);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_24($receiver) {
+    $receiver.img_lmu3us$(void 0, 'img-responsive', 'images/meetup_1_2_41/5.jpg');
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_24($receiver) {
+    $receiver.link_hsosmf$('images/meetup_1_2_41/5.jpg', void 0, mapOf(to('data-fancybox', 'kotlin-1_2_41')), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_24);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_25($receiver) {
+    $receiver.img_lmu3us$(void 0, 'img-responsive', 'images/meetup_1_2_41/6.jpg');
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_25($receiver) {
+    $receiver.link_hsosmf$('images/meetup_1_2_41/6.jpg', void 0, mapOf(to('data-fancybox', 'kotlin-1_2_41')), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_25);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_26($receiver) {
+    $receiver.img_lmu3us$(void 0, 'img-responsive', 'images/meetup_1_2_41/7.jpg');
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_26($receiver) {
+    $receiver.link_hsosmf$('images/meetup_1_2_41/7.jpg', void 0, mapOf(to('data-fancybox', 'kotlin-1_2_41')), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_26);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_27($receiver) {
+    $receiver.img_lmu3us$(void 0, 'img-responsive', 'images/meetup_1_2_41/8.jpg');
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_27($receiver) {
+    $receiver.link_hsosmf$('images/meetup_1_2_41/8.jpg', void 0, mapOf(to('data-fancybox', 'kotlin-1_2_41')), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_27);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_14($receiver) {
+    $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_24);
+    $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_25);
+    $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_26);
+    $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_27);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda_15($receiver) {
+    $receiver.div_qf6fe3$(void 0, 'row', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_13);
+    $receiver.div_qf6fe3$(void 0, 'row', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_14);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_28($receiver) {
+    $receiver.img_lmu3us$(void 0, 'img-responsive', 'images/mobconf18/1.jpg');
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_28($receiver) {
+    $receiver.link_hsosmf$('images/mobconf18/1.jpg', void 0, mapOf(to('data-fancybox', 'mobconf18')), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_28);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_29($receiver) {
+    $receiver.img_lmu3us$(void 0, 'img-responsive', 'images/mobconf18/2.jpg');
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_29($receiver) {
+    $receiver.link_hsosmf$('images/mobconf18/2.jpg', void 0, mapOf(to('data-fancybox', 'mobconf18')), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_29);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_30($receiver) {
+    $receiver.img_lmu3us$(void 0, 'img-responsive', 'images/mobconf18/3.jpg');
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_30($receiver) {
+    $receiver.link_hsosmf$('images/mobconf18/3.jpg', void 0, mapOf(to('data-fancybox', 'mobconf18')), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_30);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_31($receiver) {
+    $receiver.img_lmu3us$(void 0, 'img-responsive', 'images/mobconf18/4.jpg');
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_31($receiver) {
+    $receiver.link_hsosmf$('images/mobconf18/4.jpg', void 0, mapOf(to('data-fancybox', 'mobconf18')), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_31);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_15($receiver) {
+    $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_28);
+    $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_29);
+    $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_30);
+    $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_31);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_32($receiver) {
+    $receiver.img_lmu3us$(void 0, 'img-responsive', 'images/mobconf18/5.jpg');
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_32($receiver) {
+    $receiver.link_hsosmf$('images/mobconf18/5.jpg', void 0, mapOf(to('data-fancybox', 'mobconf18')), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_32);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_33($receiver) {
+    $receiver.img_lmu3us$(void 0, 'img-responsive', 'images/mobconf18/6.jpg');
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_33($receiver) {
+    $receiver.link_hsosmf$('images/mobconf18/6.jpg', void 0, mapOf(to('data-fancybox', 'mobconf18')), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_33);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_34($receiver) {
+    $receiver.img_lmu3us$(void 0, 'img-responsive', 'images/mobconf18/7.jpg');
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_34($receiver) {
+    $receiver.link_hsosmf$('images/mobconf18/7.jpg', void 0, mapOf(to('data-fancybox', 'mobconf18')), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_34);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_35($receiver) {
+    $receiver.img_lmu3us$(void 0, 'img-responsive', 'images/mobconf18/8.jpg');
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_35($receiver) {
+    $receiver.link_hsosmf$('images/mobconf18/8.jpg', void 0, mapOf(to('data-fancybox', 'mobconf18')), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_35);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_16($receiver) {
+    $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_32);
+    $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_33);
+    $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_34);
+    $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_35);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda_16($receiver) {
+    $receiver.div_qf6fe3$(void 0, 'row', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_15);
+    $receiver.div_qf6fe3$(void 0, 'row', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_16);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda_9($receiver) {
+    $receiver.div_qf6fe3$('meetup1', 'tab-pane fade in active', void 0, mapOf(to('role', 'tabpanel')), main$lambda$lambda$lambda$lambda$lambda$lambda_11);
+    $receiver.div_qf6fe3$('kotlin-bkk', 'tab-pane fade', void 0, mapOf(to('role', 'tabpanel')), main$lambda$lambda$lambda$lambda$lambda$lambda_12);
+    $receiver.div_qf6fe3$('kotlin-workshop', 'tab-pane fade', void 0, mapOf(to('role', 'tabpanel')), main$lambda$lambda$lambda$lambda$lambda$lambda_13);
+    $receiver.div_qf6fe3$('kotlin-1_2', 'tab-pane fade', void 0, mapOf(to('role', 'tabpanel')), main$lambda$lambda$lambda$lambda$lambda$lambda_14);
+    $receiver.div_qf6fe3$('kotlin-1_2_41', 'tab-pane fade', void 0, mapOf(to('role', 'tabpanel')), main$lambda$lambda$lambda$lambda$lambda$lambda_15);
+    $receiver.div_qf6fe3$('mobconf18', 'tab-pane fade', void 0, mapOf(to('role', 'tabpanel')), main$lambda$lambda$lambda$lambda$lambda$lambda_16);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda_7($receiver) {
+    $receiver.ul_7jt3u2$('nav nav-tabs', 'tablist', main$lambda$lambda$lambda$lambda$lambda_8);
+    $receiver.div_qf6fe3$(void 0, 'tab-content', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda_9);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda_4($receiver) {
+    $receiver.h2_9jyg1o$('row-title content-ct', main$lambda$lambda$lambda$lambda_6);
+    $receiver.div_qf6fe3$(void 0, 'col-md-12', void 0, void 0, main$lambda$lambda$lambda$lambda_7);
+    return Unit;
+  }
+  function main$lambda$lambda_3($receiver) {
+    $receiver.div_qf6fe3$('events', 'row me-row schedule', void 0, void 0, main$lambda$lambda$lambda_4);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda_17($receiver) {
+    $receiver.text_61zpoe$('Thailand Kotlin Developer');
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda_10($receiver) {
+    $receiver.text_61zpoe$('\xA9 2017, ');
+    $receiver.link_hsosmf$('https://thaikotlindev.github.io', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda_17);
+    $receiver.text_61zpoe$(' | All rights reserved.');
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda_8($receiver) {
+    $receiver.p_9jyg1o$(void 0, main$lambda$lambda$lambda$lambda$lambda_10);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_17($receiver) {
+    $receiver.italic_puj7f4$('ti-facebook', ' Facebook Group');
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda_18($receiver) {
+    $receiver.link_hsosmf$('https://www.facebook.com/groups/872547279487598/?ref=bookmarks', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_17);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_18($receiver) {
+    $receiver.italic_puj7f4$('ti-email', ' Contact Us');
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda_19($receiver) {
+    $receiver.link_hsosmf$('mailto:thaikotlindev@gmail.com', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_18);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda_11($receiver) {
+    $receiver.li_7jt3u2$(void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda_18);
+    $receiver.li_7jt3u2$(void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda_19);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda_9($receiver) {
+    $receiver.ul_7jt3u2$('footer-menu', void 0, main$lambda$lambda$lambda$lambda$lambda_11);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda_5($receiver) {
+    $receiver.div_qf6fe3$(void 0, 'col-md-6 col-sm-6', void 0, void 0, main$lambda$lambda$lambda$lambda_8);
+    $receiver.div_qf6fe3$(void 0, 'col-md-6 col-sm-6', void 0, void 0, main$lambda$lambda$lambda$lambda_9);
+    return Unit;
+  }
+  function main$lambda$lambda_4($receiver) {
+    $receiver.div_qf6fe3$(void 0, 'row footer-credit', void 0, void 0, main$lambda$lambda$lambda_5);
+    return Unit;
+  }
+  function main$lambda($receiver) {
+    $receiver.nav_9jyg1o$('side-menu', main$lambda$lambda);
+    $receiver.div_qf6fe3$(void 0, 'container-fluid', void 0, void 0, main$lambda$lambda_0);
+    $receiver.div_qf6fe3$(void 0, 'container', void 0, void 0, main$lambda$lambda_1);
+    $receiver.div_qf6fe3$('next-event', 'container-fluid tickets', void 0, void 0, main$lambda$lambda_2);
+    $receiver.div_qf6fe3$(void 0, 'container', void 0, void 0, main$lambda$lambda_3);
+    $receiver.div_qf6fe3$('sponsorship', 'container-fluid footer', void 0, void 0, main$lambda$lambda_4);
+    return Unit;
+  }
+  function main(args) {
+    app(void 0, main$lambda);
+  }
   function ContactType(name, ordinal, logo) {
     Enum.call(this);
     this.logo = logo;
@@ -382,7 +1118,7 @@ var output = function (_, Kotlin) {
     return ContactType$GOOGLE_instance;
   }
   ContactType.$metadata$ = {
-    kind: Kotlin.Kind.CLASS,
+    kind: Kind_CLASS,
     simpleName: 'ContactType',
     interfaces: [Enum]
   };
@@ -408,455 +1144,10 @@ var output = function (_, Kotlin) {
         return ContactType$LINKEDIN_getInstance();
       case 'GOOGLE':
         return ContactType$GOOGLE_getInstance();
-      default:Kotlin.throwISE('No enum constant io.github.thaikotlindev.enum.ContactType.' + name);
+      default:throwISE('No enum constant io.github.thaikotlindev.enum.ContactType.' + name);
     }
   }
   ContactType.valueOf_61zpoe$ = ContactType$valueOf;
-  function main$lambda$lambda$lambda$lambda($receiver) {
-    $receiver.a_wrtstz$('page-scroll');
-  }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda(closure$it) {
-    return function ($receiver) {
-      $receiver.text_61zpoe$(closure$it.title);
-    };
-  }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda(closure$it) {
-    return function ($receiver) {
-      $receiver.span_9jyg1o$('menu-title', main$lambda$lambda$lambda$lambda$lambda$lambda$lambda(closure$it));
-      $receiver.span_9jyg1o$('dot');
-    };
-  }
-  function main$lambda$lambda$lambda$lambda$lambda(closure$it) {
-    return function ($receiver) {
-      $receiver.link_hsosmf$(closure$it.anchor, 'page-scroll', void 0, main$lambda$lambda$lambda$lambda$lambda$lambda(closure$it));
-    };
-  }
-  function main$lambda$lambda$lambda($receiver) {
-    $receiver.li_7jt3u2$('hidden active', void 0, main$lambda$lambda$lambda$lambda);
-    var tmp$;
-    tmp$ = menus.iterator();
-    while (tmp$.hasNext()) {
-      var element = tmp$.next();
-      $receiver.li_7jt3u2$(void 0, void 0, main$lambda$lambda$lambda$lambda$lambda(element));
-    }
-  }
-  function main$lambda$lambda($receiver) {
-    $receiver.ul_7jt3u2$(void 0, void 0, main$lambda$lambda$lambda);
-  }
-  function main$lambda$lambda$lambda$lambda$lambda_0($receiver) {
-    $receiver.text_61zpoe$('Attend the most awaited ');
-    $receiver.strong_61zpoe$('Kotlin');
-    $receiver.text_61zpoe$(' workshop of 2017');
-  }
-  function main$lambda$lambda$lambda$lambda$lambda_1($receiver) {
-    $receiver.text_61zpoe$('to boost up your skill!');
-  }
-  function main$lambda$lambda$lambda$lambda$lambda_2($receiver) {
-    $receiver.text_61zpoe$('August, 2017');
-  }
-  function main$lambda$lambda$lambda$lambda$lambda_3($receiver) {
-    $receiver.text_61zpoe$('More Detail');
-    $receiver.span_9jyg1o$('ti-arrow-right');
-  }
-  function main$lambda$lambda$lambda$lambda_0($receiver) {
-    $receiver.img_lmu3us$(void 0, 'logo', 'images/meetup-logo.png');
-    $receiver.h1_tlpz1u$(main$lambda$lambda$lambda$lambda$lambda_0);
-    $receiver.h3_tlpz1u$(main$lambda$lambda$lambda$lambda$lambda_1);
-    $receiver.h4_tlpz1u$(main$lambda$lambda$lambda$lambda$lambda_2);
-    $receiver.link_hsosmf$('#next-event', 'btn btn-lg btn-red page-scroll', void 0, main$lambda$lambda$lambda$lambda$lambda_3);
-  }
-  function main$lambda$lambda$lambda$lambda_1($receiver) {
-    $receiver.img_lmu3us$(void 0, 'rocket animated bounce', 'images/android_kotlin_flag.png');
-  }
-  function main$lambda$lambda$lambda_0($receiver) {
-    $receiver.div_qf6fe3$(void 0, 'col-md-9', void 0, void 0, main$lambda$lambda$lambda$lambda_0);
-    $receiver.div_qf6fe3$(void 0, 'col-md-3 hidden-xs', void 0, void 0, main$lambda$lambda$lambda$lambda_1);
-  }
-  function main$lambda$lambda_0($receiver) {
-    $receiver.div_qf6fe3$('kotlin', 'row hero-header', void 0, void 0, main$lambda$lambda$lambda_0);
-  }
-  function main$lambda$lambda$lambda$lambda_2($receiver) {
-    $receiver.text_61zpoe$('Why Kotlin Is Super Cool?');
-  }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda_0(closure$it) {
-    return function ($receiver) {
-      $receiver.text_61zpoe$(closure$it.title);
-    };
-  }
-  function main$lambda$lambda$lambda$lambda$lambda_4(closure$it) {
-    return function ($receiver) {
-      $receiver.span_9jyg1o$(closure$it.logo);
-      $receiver.h3_tlpz1u$(main$lambda$lambda$lambda$lambda$lambda$lambda_0(closure$it));
-      $receiver.p_puj7f4$(void 0, closure$it.detail);
-    };
-  }
-  function main$lambda$lambda$lambda_1($receiver) {
-    $receiver.h2_9jyg1o$('row-title', main$lambda$lambda$lambda$lambda_2);
-    var tmp$;
-    tmp$ = features.iterator();
-    while (tmp$.hasNext()) {
-      var element = tmp$.next();
-      $receiver.div_qf6fe3$(void 0, 'col-md-3 feature', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda_4(element));
-    }
-  }
-  function main$lambda$lambda$lambda$lambda_3($receiver) {
-    $receiver.text_61zpoe$('Meet the Staff');
-  }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda_1(closure$it) {
-    return function ($receiver) {
-      $receiver.text_61zpoe$(closure$it.name);
-    };
-  }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda(closure$it) {
-    return function ($receiver) {
-      $receiver.span_9jyg1o$(closure$it.type.logo);
-    };
-  }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda(closure$it) {
-    return function ($receiver) {
-      $receiver.link_hsosmf$(closure$it.link, void 0, mapOf_0(to('target', '_blank')), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda(closure$it));
-    };
-  }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda_2(closure$it) {
-    return function ($receiver) {
-      var tmp$;
-      tmp$ = closure$it.contacts.iterator();
-      while (tmp$.hasNext()) {
-        var element = tmp$.next();
-        $receiver.li_7jt3u2$(void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda(element));
-      }
-    };
-  }
-  function main$lambda$lambda$lambda$lambda$lambda_5(closure$it) {
-    return function ($receiver) {
-      $receiver.img_lmu3us$(void 0, 'speaker-img', 'images/staff/' + closure$it.image);
-      $receiver.h3_tlpz1u$(main$lambda$lambda$lambda$lambda$lambda$lambda_1(closure$it));
-      $receiver.p_puj7f4$(void 0, closure$it.position);
-      $receiver.ul_7jt3u2$('speaker-social', void 0, main$lambda$lambda$lambda$lambda$lambda$lambda_2(closure$it));
-    };
-  }
-  function main$lambda$lambda$lambda_2($receiver) {
-    $receiver.h2_9jyg1o$('row-title', main$lambda$lambda$lambda$lambda_3);
-    var tmp$;
-    tmp$ = staffs.iterator();
-    while (tmp$.hasNext()) {
-      var element = tmp$.next();
-      $receiver.div_qf6fe3$(void 0, 'col-md-4 col-sm-6 feature', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda_5(element));
-    }
-  }
-  function main$lambda$lambda_1($receiver) {
-    $receiver.div_qf6fe3$(void 0, 'row me-row content-ct', void 0, void 0, main$lambda$lambda$lambda_1);
-    $receiver.div_qf6fe3$('staff', 'row me-row content-ct speaker', void 0, void 0, main$lambda$lambda$lambda_2);
-  }
-  function main$lambda$lambda$lambda$lambda_4($receiver) {
-    $receiver.text_61zpoe$('Kotlin Workshop');
-  }
-  function main$lambda$lambda$lambda$lambda$lambda_6($receiver) {
-    $receiver.text_61zpoe$('Ticket');
-  }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda_3($receiver) {
-    $receiver.text_61zpoe$('Everything you need to know about writing ');
-    $receiver.italic_puj7f4$('Android');
-    $receiver.text_61zpoe$(' apps in ');
-    $receiver.strong_61zpoe$('Kotlin');
-    $receiver.p_puj7f4$(void 0, 'The workshop has 4 sessions.');
-  }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_0($receiver) {
-    $receiver.text_61zpoe$('Intro to Kotlin');
-  }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_1($receiver) {
-    $receiver.text_61zpoe$('Kotlin for Android Workshop');
-  }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_2($receiver) {
-    $receiver.text_61zpoe$('Workshop: Miracle of stdLib');
-  }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_3($receiver) {
-    $receiver.text_61zpoe$('Non-JVM Kotlin');
-  }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda_4($receiver) {
-    $receiver.li_7jt3u2$('text-left', void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_0);
-    $receiver.li_7jt3u2$('text-left', void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_1);
-    $receiver.li_7jt3u2$('text-left', void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_2);
-    $receiver.li_7jt3u2$('text-left', void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_3);
-  }
-  function main$lambda$lambda$lambda$lambda$lambda_7($receiver) {
-    $receiver.h3_tlpz1u$(main$lambda$lambda$lambda$lambda$lambda$lambda_3);
-    $receiver.ul_7jt3u2$(void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda_4);
-  }
-  function main$lambda$lambda$lambda$lambda_5($receiver) {
-    $receiver.h2_9jyg1o$(void 0, main$lambda$lambda$lambda$lambda$lambda_6);
-    $receiver.p_puj7f4$('price', '0 THB');
-    $receiver.div_qf6fe3$(void 0, 'detail', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda_7);
-    $receiver.br();
-    $receiver.br();
-  }
-  function main$lambda$lambda$lambda_3($receiver) {
-    $receiver.h2_9jyg1o$('row-title', main$lambda$lambda$lambda$lambda_4);
-    $receiver.div_qf6fe3$(void 0, 'col-md-12 col-sm-12', void 0, void 0, main$lambda$lambda$lambda$lambda_5);
-  }
-  function main$lambda$lambda_2($receiver) {
-    $receiver.div_qf6fe3$(void 0, 'row me-row content-ct', void 0, void 0, main$lambda$lambda$lambda_3);
-  }
-  function main$lambda$lambda$lambda$lambda_6($receiver) {
-    $receiver.text_61zpoe$('Past Events');
-  }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_4($receiver) {
-    $receiver.text_61zpoe$('Kotlin Meetup #1');
-  }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda_5($receiver) {
-    $receiver.link_hsosmf$('#meetup1', void 0, mapOf_1([to('aria-controls', 'meetup1'), to('role', 'tab'), to('data-toggle', 'tab')]), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_4);
-  }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_5($receiver) {
-    $receiver.text_61zpoe$('Kotlin 1.1 Event BKK');
-  }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda_6($receiver) {
-    $receiver.link_hsosmf$('#kotlin-bkk', void 0, mapOf_1([to('aria-controls', 'kotlin-bkk'), to('role', 'tab'), to('data-toggle', 'tab')]), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_5);
-  }
-  function main$lambda$lambda$lambda$lambda$lambda_8($receiver) {
-    $receiver.li_7jt3u2$('active', 'presentation', main$lambda$lambda$lambda$lambda$lambda$lambda_5);
-    $receiver.li_7jt3u2$(void 0, 'presentation', main$lambda$lambda$lambda$lambda$lambda$lambda_6);
-  }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_0($receiver) {
-    $receiver.img_lmu3us$(void 0, 'img-responsive', 'images/meetup/t01.jpg');
-  }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_0($receiver) {
-    $receiver.link_hsosmf$('images/meetup/01.jpg', void 0, mapOf_0(to('data-fancybox', 'meetup1')), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_0);
-  }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_1($receiver) {
-    $receiver.img_lmu3us$(void 0, 'img-responsive', 'images/meetup/t02.jpg');
-  }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_1($receiver) {
-    $receiver.link_hsosmf$('images/meetup/02.jpg', void 0, mapOf_0(to('data-fancybox', 'meetup1')), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_1);
-  }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_2($receiver) {
-    $receiver.img_lmu3us$(void 0, 'img-responsive', 'images/meetup/t03.jpg');
-  }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_2($receiver) {
-    $receiver.link_hsosmf$('images/meetup/03.jpg', void 0, mapOf_0(to('data-fancybox', 'meetup1')), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_2);
-  }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_3($receiver) {
-    $receiver.img_lmu3us$(void 0, 'img-responsive', 'images/meetup/t04.jpg');
-  }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_3($receiver) {
-    $receiver.link_hsosmf$('images/meetup/04.jpg', void 0, mapOf_0(to('data-fancybox', 'meetup1')), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_3);
-  }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_6($receiver) {
-    $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_0);
-    $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_1);
-    $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_2);
-    $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_3);
-  }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda_7($receiver) {
-    $receiver.div_qf6fe3$(void 0, 'row', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_6);
-  }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_4($receiver) {
-    $receiver.img_lmu3us$(void 0, 'img-responsive', 'images/kotlinbkk/t01.jpg');
-  }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_4($receiver) {
-    $receiver.link_hsosmf$('images/kotlinbkk/01.jpg', void 0, mapOf_0(to('data-fancybox', 'kotlinbkk')), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_4);
-  }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_5($receiver) {
-    $receiver.img_lmu3us$(void 0, 'img-responsive', 'images/kotlinbkk/t02.jpg');
-  }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_5($receiver) {
-    $receiver.link_hsosmf$('images/kotlinbkk/02.jpg', void 0, mapOf_0(to('data-fancybox', 'kotlinbkk')), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_5);
-  }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_6($receiver) {
-    $receiver.img_lmu3us$(void 0, 'img-responsive', 'images/kotlinbkk/t03.jpg');
-  }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_6($receiver) {
-    $receiver.link_hsosmf$('images/kotlinbkk/03.jpg', void 0, mapOf_0(to('data-fancybox', 'kotlinbkk')), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_6);
-  }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_7($receiver) {
-    $receiver.img_lmu3us$(void 0, 'img-responsive', 'images/kotlinbkk/t04.jpg');
-  }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_7($receiver) {
-    $receiver.link_hsosmf$('images/kotlinbkk/04.jpg', void 0, mapOf_0(to('data-fancybox', 'kotlinbkk')), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_7);
-  }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_7($receiver) {
-    $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_4);
-    $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_5);
-    $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_6);
-    $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_7);
-  }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda_8($receiver) {
-    $receiver.div_qf6fe3$(void 0, 'row', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_7);
-  }
-  function main$lambda$lambda$lambda$lambda$lambda_9($receiver) {
-    $receiver.div_qf6fe3$('meetup1', 'tab-pane fade in active', void 0, mapOf_0(to('role', 'tabpanel')), main$lambda$lambda$lambda$lambda$lambda$lambda_7);
-    $receiver.div_qf6fe3$('kotlin-bkk', 'tab-pane fade', void 0, mapOf_0(to('role', 'tabpanel')), main$lambda$lambda$lambda$lambda$lambda$lambda_8);
-  }
-  function main$lambda$lambda$lambda$lambda_7($receiver) {
-    $receiver.ul_7jt3u2$('nav nav-tabs', 'tablist', main$lambda$lambda$lambda$lambda$lambda_8);
-    $receiver.div_qf6fe3$(void 0, 'tab-content', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda_9);
-  }
-  function main$lambda$lambda$lambda_4($receiver) {
-    $receiver.h2_9jyg1o$('row-title content-ct', main$lambda$lambda$lambda$lambda_6);
-    $receiver.div_qf6fe3$(void 0, 'col-md-12', void 0, void 0, main$lambda$lambda$lambda$lambda_7);
-  }
-  function main$lambda$lambda_3($receiver) {
-    $receiver.div_qf6fe3$('events', 'row me-row schedule', void 0, void 0, main$lambda$lambda$lambda_4);
-  }
-  function main$lambda$lambda$lambda$lambda_8($receiver) {
-    $receiver.text_61zpoe$('Sponsorship');
-  }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda_9($receiver) {
-    $receiver.div_qf6fe3$(void 0, 'ti-medall');
-  }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda_10($receiver) {
-    $receiver.text_61zpoe$('Gold');
-  }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_8($receiver) {
-    $receiver.text_61zpoe$('4,000 THB');
-  }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_8($receiver) {
-    $receiver.italic_puj7f4$('1');
-    $receiver.text_61zpoe$(' seat guaranteed');
-  }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_9($receiver) {
-    $receiver.italic_puj7f4$('Small');
-    $receiver.text_61zpoe$(' logo on a backdrop');
-  }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_9($receiver) {
-    $receiver.li_7jt3u2$(void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_8);
-    $receiver.li_7jt3u2$(void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_9);
-  }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda_11($receiver) {
-    $receiver.div_qf6fe3$(void 0, 'sub-title', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_8);
-    $receiver.ul_7jt3u2$(void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_9);
-  }
-  function main$lambda$lambda$lambda$lambda$lambda_10($receiver) {
-    $receiver.div_qf6fe3$(void 0, 'thumbnail', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda_9);
-    $receiver.div_qf6fe3$(void 0, 'title', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda_10);
-    $receiver.div_qf6fe3$(void 0, 'content', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda_11);
-  }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda_12($receiver) {
-    $receiver.div_qf6fe3$(void 0, 'ti-cup');
-  }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda_13($receiver) {
-    $receiver.text_61zpoe$('Platinum');
-  }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_10($receiver) {
-    $receiver.text_61zpoe$('5,000 THB');
-  }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_10($receiver) {
-    $receiver.strong_61zpoe$('2');
-    $receiver.text_61zpoe$(' seats guaranteed');
-  }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_11($receiver) {
-    $receiver.strong_61zpoe$('Big');
-    $receiver.text_61zpoe$(' logo on a backdrop');
-  }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_11($receiver) {
-    $receiver.li_7jt3u2$(void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_10);
-    $receiver.li_7jt3u2$(void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_11);
-  }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda_14($receiver) {
-    $receiver.div_qf6fe3$(void 0, 'sub-title', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_10);
-    $receiver.ul_7jt3u2$(void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_11);
-  }
-  function main$lambda$lambda$lambda$lambda$lambda_11($receiver) {
-    $receiver.div_qf6fe3$(void 0, 'thumbnail', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda_12);
-    $receiver.div_qf6fe3$(void 0, 'title', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda_13);
-    $receiver.div_qf6fe3$(void 0, 'content', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda_14);
-  }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda_15($receiver) {
-    $receiver.div_qf6fe3$(void 0, 'ti-crown');
-  }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda_16($receiver) {
-    $receiver.text_61zpoe$('Diamond');
-  }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_12($receiver) {
-    $receiver.text_61zpoe$('10,000 THB');
-  }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_12($receiver) {
-    $receiver.strong_61zpoe$('2');
-    $receiver.text_61zpoe$(' seats guaranteed');
-  }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_13($receiver) {
-    $receiver.strong_61zpoe$('Big');
-    $receiver.text_61zpoe$(' logo on a backdrop');
-  }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_8($receiver) {
-    $receiver.strong_61zpoe$('* The slides will be available for download on the internet until the end of time');
-  }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_14($receiver) {
-    $receiver.strong_61zpoe$('Logo on presentation slides');
-    $receiver.br();
-    $receiver.span_9jyg1o$('highlight', main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_8);
-  }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_13($receiver) {
-    $receiver.li_7jt3u2$(void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_12);
-    $receiver.li_7jt3u2$(void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_13);
-    $receiver.li_7jt3u2$(void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_14);
-  }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda_17($receiver) {
-    $receiver.div_qf6fe3$(void 0, 'sub-title', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_12);
-    $receiver.ul_7jt3u2$(void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_13);
-  }
-  function main$lambda$lambda$lambda$lambda$lambda_12($receiver) {
-    $receiver.div_qf6fe3$(void 0, 'thumbnail', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda_15);
-    $receiver.div_qf6fe3$(void 0, 'title', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda_16);
-    $receiver.div_qf6fe3$(void 0, 'content', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda_17);
-  }
-  function main$lambda$lambda$lambda$lambda_9($receiver) {
-    $receiver.div_qf6fe3$(void 0, 'pricing', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda_10);
-    $receiver.div_qf6fe3$(void 0, 'pricing', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda_11);
-    $receiver.div_qf6fe3$(void 0, 'pricing', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda_12);
-  }
-  function main$lambda$lambda$lambda_5($receiver) {
-    $receiver.h2_9jyg1o$('row-title', main$lambda$lambda$lambda$lambda_8);
-    $receiver.div_qf6fe3$(void 0, 'col-md-12 col-sm-12', void 0, void 0, main$lambda$lambda$lambda$lambda_9);
-  }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda_18($receiver) {
-    $receiver.text_61zpoe$('Thailand Kotlin Developer');
-  }
-  function main$lambda$lambda$lambda$lambda$lambda_13($receiver) {
-    $receiver.text_61zpoe$('\xA9 2017, ');
-    $receiver.link_hsosmf$('https://thaikotlindev.github.io', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda_18);
-    $receiver.text_61zpoe$(' | All rights reserved.');
-  }
-  function main$lambda$lambda$lambda$lambda_10($receiver) {
-    $receiver.p_9jyg1o$(void 0, main$lambda$lambda$lambda$lambda$lambda_13);
-  }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_14($receiver) {
-    $receiver.italic_puj7f4$('ti-facebook', ' Facebook Group');
-  }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda_19($receiver) {
-    $receiver.link_hsosmf$('https://www.facebook.com/groups/872547279487598/?ref=bookmarks', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_14);
-  }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_15($receiver) {
-    $receiver.italic_puj7f4$('ti-email', ' Contact Us');
-  }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda_20($receiver) {
-    $receiver.link_hsosmf$('mailto:thaikotlindev@gmail.com', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_15);
-  }
-  function main$lambda$lambda$lambda$lambda$lambda_14($receiver) {
-    $receiver.li_7jt3u2$(void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda_19);
-    $receiver.li_7jt3u2$(void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda_20);
-  }
-  function main$lambda$lambda$lambda$lambda_11($receiver) {
-    $receiver.ul_7jt3u2$('footer-menu', void 0, main$lambda$lambda$lambda$lambda$lambda_14);
-  }
-  function main$lambda$lambda$lambda_6($receiver) {
-    $receiver.div_qf6fe3$(void 0, 'col-md-6 col-sm-6', void 0, void 0, main$lambda$lambda$lambda$lambda_10);
-    $receiver.div_qf6fe3$(void 0, 'col-md-6 col-sm-6', void 0, void 0, main$lambda$lambda$lambda$lambda_11);
-  }
-  function main$lambda$lambda_4($receiver) {
-    $receiver.div_qf6fe3$(void 0, 'row contact content-ct', void 0, void 0, main$lambda$lambda$lambda_5);
-    $receiver.div_qf6fe3$(void 0, 'row footer-credit', void 0, void 0, main$lambda$lambda$lambda_6);
-  }
-  function main$lambda($receiver) {
-    $receiver.nav_9jyg1o$('side-menu', main$lambda$lambda);
-    $receiver.div_qf6fe3$(void 0, 'container-fluid', void 0, void 0, main$lambda$lambda_0);
-    $receiver.div_qf6fe3$(void 0, 'container', void 0, void 0, main$lambda$lambda_1);
-    $receiver.div_qf6fe3$('next-event', 'container-fluid tickets', void 0, void 0, main$lambda$lambda_2);
-    $receiver.div_qf6fe3$(void 0, 'container', void 0, void 0, main$lambda$lambda_3);
-    $receiver.div_qf6fe3$('sponsorship', 'container-fluid footer', void 0, void 0, main$lambda$lambda_4);
-  }
-  function main(args) {
-    app(void 0, main$lambda);
-  }
   function Contact(link, type) {
     if (link === void 0)
       link = '';
@@ -864,7 +1155,7 @@ var output = function (_, Kotlin) {
     this.type = type;
   }
   Contact.$metadata$ = {
-    kind: Kotlin.Kind.CLASS,
+    kind: Kind_CLASS,
     simpleName: 'Contact',
     interfaces: []
   };
@@ -901,7 +1192,7 @@ var output = function (_, Kotlin) {
     this.logo = logo;
   }
   Feature.$metadata$ = {
-    kind: Kotlin.Kind.CLASS,
+    kind: Kind_CLASS,
     simpleName: 'Feature',
     interfaces: []
   };
@@ -939,7 +1230,7 @@ var output = function (_, Kotlin) {
     this.anchor = anchor;
   }
   Menu.$metadata$ = {
-    kind: Kotlin.Kind.CLASS,
+    kind: Kind_CLASS,
     simpleName: 'Menu',
     interfaces: []
   };
@@ -964,6 +1255,7 @@ var output = function (_, Kotlin) {
   Menu.prototype.equals = function (other) {
     return this === other || (other !== null && (typeof other === 'object' && (Object.getPrototypeOf(this) === Object.getPrototypeOf(other) && (Kotlin.equals(this.title, other.title) && Kotlin.equals(this.anchor, other.anchor)))));
   };
+  var ArrayList_init = Kotlin.kotlin.collections.ArrayList_init_287e2$;
   function Staff(name, image, position, contacts) {
     if (name === void 0)
       name = '';
@@ -972,7 +1264,7 @@ var output = function (_, Kotlin) {
     if (position === void 0)
       position = '';
     if (contacts === void 0) {
-      contacts = Kotlin.kotlin.collections.ArrayList_init_ww73n8$();
+      contacts = ArrayList_init();
     }
     this.name = name;
     this.image = image;
@@ -980,7 +1272,7 @@ var output = function (_, Kotlin) {
     this.contacts = contacts;
   }
   Staff.$metadata$ = {
-    kind: Kotlin.Kind.CLASS,
+    kind: Kind_CLASS,
     simpleName: 'Staff',
     interfaces: []
   };
@@ -1038,6 +1330,7 @@ var output = function (_, Kotlin) {
       return staffs;
     }
   });
+  package$thaikotlindev.main_kand9s$ = main;
   Object.defineProperty(ContactType, 'WEB', {
     get: ContactType$WEB_getInstance
   });
@@ -1064,18 +1357,17 @@ var output = function (_, Kotlin) {
   });
   var package$enum = package$thaikotlindev.enum || (package$thaikotlindev.enum = {});
   package$enum.ContactType = ContactType;
-  package$thaikotlindev.main_kand9s$ = main;
   var package$model = package$thaikotlindev.model || (package$thaikotlindev.model = {});
   package$model.Contact = Contact;
   package$model.Feature = Feature;
   package$model.Menu = Menu;
   package$model.Staff = Staff;
-  menus = listOf([new Menu('Hello Kotlin', '#kotlin'), new Menu('Staff', '#staff'), new Menu('Next Event', '#next-event'), new Menu('Events', '#events'), new Menu('Sponsorship', '#sponsorship')]);
+  menus = listOf([new Menu('Hello Kotlin', '#kotlin'), new Menu('Staff', '#staff'), new Menu('Next Event', '#next-event'), new Menu('Events', '#events')]);
   features = listOf([new Feature('Productivity', 'Some people say Kotlin is like Java on steroid, it can do all the stuff Java can do, plus\n                        varieties of language features will boost your productivity like never before.', 'ti-stats-up'), new Feature('Interoperable', 'Kotlin is statically typed, modern and mature. It was designed with Java interoperability\n                        in mind so you can write Kotlin everywhere Java goes, seamlessly, side by side.\n                        All those libraries written in Java over the past 20 years are still work.', 'ti-check'), new Feature('Versatile', 'Kotlin has great tooling support. Why? Because it was created by JetBrains, the people who\n                        built IntelliJ which Android Studio is based on, and\n                        we love Android Studio.', 'ti-world'), new Feature('First-class citizen', 'Recently in IO \u201917, Google announced a first class support for Kotlin in Android development.\n                        People went crazy about this. There are tons of videos and articles about Kotlin all over the internet.\n                        All the cool kids these day write Kotlin, so why don\u2019t you.', 'ti-android')]);
-  staffs = listOf([new Staff('Birth', 'verachad.jpg', 'Senior Android Developer @ Agoda', mutableListOf([new Contact('https://github.com/verachadW', ContactType$GITHUB_getInstance()), new Contact('https://twitter.com/verachadw', ContactType$TWITTER_getInstance()), new Contact('https://www.linkedin.com/in/verachadw', ContactType$LINKEDIN_getInstance())])), new Staff('Dew', 'dew.jpg', 'Mobile Developer @ Santora Nakama & YesMom, Co-Founder/Editor at Black Lens Publication', mutableListOf([new Contact('http://blacklenspub.com', ContactType$WEB_getInstance()), new Contact('https://github.com/dewparin', ContactType$GITHUB_getInstance()), new Contact('https://medium.com/@dewparin', ContactType$MEDIUM_getInstance()), new Contact('https://twitter.com/dewparin', ContactType$TWITTER_getInstance())])), new Staff('Travis P', 'travisp.jpg', 'Kotlin God @ Appsynth, Co-Founder/Editor at Black Lens Publication', mutableListOf([new Contact('http://blacklenspub.com', ContactType$WEB_getInstance()), new Contact('https://github.com/travisp101', ContactType$GITHUB_getInstance()), new Contact('https://www.facebook.com/travisp101', ContactType$FACEBOOK_getInstance()), new Contact('https://twitter.com/travisp101', ContactType$TWITTER_getInstance())])), new Staff('Pop', 'pop.jpg', 'Android \u2764 Kotlin @ ShopSpot', mutableListOf([new Contact('https://github.com/minibugdev', ContactType$GITHUB_getInstance()), new Contact('https://www.facebook.com/teeranai.b', ContactType$FACEBOOK_getInstance()), new Contact('https://www.linkedin.com/in/teeranaib', ContactType$LINKEDIN_getInstance())])), new Staff('Babe', 'babe.jpg', 'Kotlinian @ Genxas', mutableListOf([new Contact('https://github.com/babedev', ContactType$GITHUB_getInstance()), new Contact('https://medium.com/@babedev', ContactType$MEDIUM_getInstance()), new Contact('https://www.facebook.com/babedev', ContactType$FACEBOOK_getInstance()), new Contact('https://plus.google.com/+ChristopherNg', ContactType$GOOGLE_getInstance())])), new Staff('Ju', 'ju.jpg', 'Developer & Drummer', mutableListOf([new Contact('https://github.com/judrummer', ContactType$GITHUB_getInstance()), new Contact('https://www.youtube.com/c/JuDrummer', ContactType$YOUTUBE_getInstance()), new Contact('https://www.facebook.com/judrummer', ContactType$FACEBOOK_getInstance())])), new Staff('Air', 'air.jpg', 'Android Developer @ Agoda'), new Staff('Tow', 'tow.jpg', 'Freelance Android Developer')]);
-  Kotlin.defineModule('output', _);
+  staffs = listOf([new Staff('Birth', 'verachad.jpg', 'Senior Android Developer @ Agoda', mutableListOf([new Contact('https://github.com/verachadW', ContactType$GITHUB_getInstance()), new Contact('https://twitter.com/verachadw', ContactType$TWITTER_getInstance()), new Contact('https://www.linkedin.com/in/verachadw', ContactType$LINKEDIN_getInstance())])), new Staff('Dew', 'dew.jpg', 'Mobile Developer @ Ampos, Co-Founder/Editor at Black Lens Publication', mutableListOf([new Contact('http://blacklenspub.com', ContactType$WEB_getInstance()), new Contact('https://github.com/dewparin', ContactType$GITHUB_getInstance()), new Contact('https://medium.com/@dewparin', ContactType$MEDIUM_getInstance()), new Contact('https://twitter.com/dewparin', ContactType$TWITTER_getInstance())])), new Staff('Travis P', 'travisp.jpg', 'Kotlin God @ SCB, Co-Founder/Editor at Black Lens Publication', mutableListOf([new Contact('http://blacklenspub.com', ContactType$WEB_getInstance()), new Contact('https://github.com/travisp101', ContactType$GITHUB_getInstance()), new Contact('https://www.facebook.com/travisp101', ContactType$FACEBOOK_getInstance()), new Contact('https://twitter.com/travisp101', ContactType$TWITTER_getInstance())])), new Staff('Pop', 'pop.jpg', 'Android \u2764 Kotlin @ King Power', mutableListOf([new Contact('https://github.com/minibugdev', ContactType$GITHUB_getInstance()), new Contact('https://www.facebook.com/teeranai.b', ContactType$FACEBOOK_getInstance()), new Contact('https://www.linkedin.com/in/teeranaib', ContactType$LINKEDIN_getInstance())])), new Staff('Babe', 'babe.jpg', 'Mobile Develoepr @ Event Pop, Editor at Black Lens Publication', mutableListOf([new Contact('http://blacklenspub.com', ContactType$WEB_getInstance()), new Contact('https://github.com/babedev', ContactType$GITHUB_getInstance()), new Contact('https://medium.com/@babedev', ContactType$MEDIUM_getInstance()), new Contact('https://www.facebook.com/babedev', ContactType$FACEBOOK_getInstance()), new Contact('https://plus.google.com/+ChristopherNg', ContactType$GOOGLE_getInstance())])), new Staff('Ju', 'ju.jpg', 'Developer & Drummer', mutableListOf([new Contact('https://github.com/judrummer', ContactType$GITHUB_getInstance()), new Contact('https://www.youtube.com/c/JuDrummer', ContactType$YOUTUBE_getInstance()), new Contact('https://www.facebook.com/judrummer', ContactType$FACEBOOK_getInstance())])), new Staff('Air', 'air.jpg', 'Android Developer @ Agoda'), new Staff('Tow', 'tow.jpg', 'Freelance Android Developer')]);
   main([]);
+  Kotlin.defineModule('output', _);
   return _;
 }(typeof output === 'undefined' ? {} : output, kotlin);
 
-//@ sourceMappingURL=output.js.map
+//# sourceMappingURL=output.js.map

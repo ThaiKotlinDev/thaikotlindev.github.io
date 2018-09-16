@@ -23,16 +23,14 @@ fun main(args: Array<String>) {
         div(className = "container-fluid") {
             div(id = "kotlin", className = "row hero-header") {
                 div(className = "col-md-9") {
-                    img(className = "logo", src = "images/meetup-logo.png")
+                    // img(className = "logo", src = "images/meetup-logo.png")
 
                     h1 {
-                        text("Attend the most awaited ")
-                        strong("Kotlin")
-                        text(" workshop of 2017")
+                        text("Kotlin Meet Up 1.2.61")
                     }
 
-                    h3 { text("to boost up your skill!") }
-                    h4 { text("August, 2017") }
+                    h3 { text("18:00 - 21:00 @ Learn Hub") }
+                    h4 { text("18 October, 2018") }
 
                     link("#next-event", "btn btn-lg btn-red page-scroll") {
                         text("More Detail")
@@ -80,25 +78,22 @@ fun main(args: Array<String>) {
 
         div(id = "next-event", className = "container-fluid tickets") {
             div(className = "row me-row content-ct") {
-                h2("row-title") { text("Kotlin Workshop") }
+                h2("row-title") { text("Kotlin Meet Up 1.2.61") }
 
                 div(className = "col-md-12 col-sm-12") {
                     h2 { text("Ticket") }
-                    p("price", "0 THB")
+                    p("price", "Free")
                     div(className = "detail") {
                         h3 {
                             text("Everything you need to know about writing ")
                             italic("Android")
                             text(" apps in ")
                             strong("Kotlin")
-                            p(text = "The workshop has 4 sessions.")
                         }
 
                         ul {
-                            li(className = "text-left") { text("Intro to Kotlin") }
-                            li(className = "text-left") { text("Kotlin for Android Workshop") }
-                            li(className = "text-left") { text("Workshop: Miracle of stdLib") }
-                            li(className = "text-left") { text("Non-JVM Kotlin") }
+                            li(className = "text-left") { text("Coroutines by TBD") }
+                            li(className = "text-left") { text("Create View-based Android apps with Conductor by Kittinun Vantasin, Mobile developer @ Mercari") }
                         }
                     }
 
@@ -122,7 +117,31 @@ fun main(args: Array<String>) {
 
                         li(role = "presentation") {
                             link(to = "#kotlin-bkk", attrs = mapOf("aria-controls" to "kotlin-bkk", "role" to "tab", "data-toggle" to "tab")) {
-                                text("Kotlin 1.1 Event BKK")
+                                text("Kotlin 1.1")
+                            }
+                        }
+
+                        li(role = "presentation") {
+                            link(to = "#kotlin-workshop", attrs = mapOf("aria-controls" to "workshop", "role" to "tab", "data-toggle" to "tab")) {
+                                text("Kotlin Workshop")
+                            }
+                        }
+
+                        li(role = "presentation") {
+                            link(to = "#kotlin-1_2", attrs = mapOf("aria-controls" to "kotlin-1_2", "role" to "tab", "data-toggle" to "tab")) {
+                                text("Kotlin 1.2")
+                            }
+                        }
+
+                        li(role = "presentation") {
+                            link(to = "#kotlin-1_2_41", attrs = mapOf("aria-controls" to "kotlin-1_2_41", "role" to "tab", "data-toggle" to "tab")) {
+                                text("Kotlin 1.2.41")
+                            }
+                        }
+
+                        li(role = "presentation") {
+                            link(to = "#mobconf18", attrs = mapOf("aria-controls" to "mobconf18", "role" to "tab", "data-toggle" to "tab")) {
+                                text("Mobile Conf 2018")
                             }
                         }
                     }
@@ -183,83 +202,273 @@ fun main(args: Array<String>) {
                                 }
                             }
                         }
+
+                        div(id = "kotlin-workshop", className = "tab-pane fade", attrs = mapOf("role" to "tabpanel")) {
+                            div(className = "row") {
+                                div(className = "col-xs-12 col-sm-6 col-md-3") {
+                                    link(to = "images/workshop/workshop_1.jpg", attrs = mapOf("data-fancybox" to "workshop")) {
+                                        img(className = "img-responsive", src = "images/workshop/workshop_1.jpg")
+                                    }
+                                }
+
+                                div(className = "col-xs-12 col-sm-6 col-md-3") {
+                                    link(to = "images/workshop/workshop_2.jpg", attrs = mapOf("data-fancybox" to "workshop")) {
+                                        img(className = "img-responsive", src = "images/workshop/workshop_2.jpg")
+                                    }
+                                }
+
+                                div(className = "col-xs-12 col-sm-6 col-md-3") {
+                                    link(to = "images/workshop/workshop_3.jpg", attrs = mapOf("data-fancybox" to "workshop")) {
+                                        img(className = "img-responsive", src = "images/workshop/workshop_3.jpg")
+                                    }
+                                }
+
+                                div(className = "col-xs-12 col-sm-6 col-md-3") {
+                                    link(to = "images/workshop/workshop_4.jpg", attrs = mapOf("data-fancybox" to "workshop")) {
+                                        img(className = "img-responsive", src = "images/workshop/workshop_4.jpg")
+                                    }
+                                }
+                            }
+
+                            div(className = "row") {
+                                div(className = "col-xs-12 col-sm-6 col-md-3") {
+                                    link(to = "images/workshop/workshop_5.jpg", attrs = mapOf("data-fancybox" to "workshop")) {
+                                        img(className = "img-responsive", src = "images/workshop/workshop_5.jpg")
+                                    }
+                                }
+
+                                div(className = "col-xs-12 col-sm-6 col-md-3") {
+                                    link(to = "images/workshop/workshop_6.jpg", attrs = mapOf("data-fancybox" to "workshop")) {
+                                        img(className = "img-responsive", src = "images/workshop/workshop_6.jpg")
+                                    }
+                                }
+
+                                div(className = "col-xs-12 col-sm-6 col-md-3") {
+                                    link(to = "images/workshop/workshop_7.jpg", attrs = mapOf("data-fancybox" to "workshop")) {
+                                        img(className = "img-responsive", src = "images/workshop/workshop_7.jpg")
+                                    }
+                                }
+
+                                div(className = "col-xs-12 col-sm-6 col-md-3") {
+                                    link(to = "images/workshop/workshop_8.jpg", attrs = mapOf("data-fancybox" to "workshop")) {
+                                        img(className = "img-responsive", src = "images/workshop/workshop_8.jpg")
+                                    }
+                                }
+                            }
+                        }
+
+                        div(id = "kotlin-1_2", className = "tab-pane fade", attrs = mapOf("role" to "tabpanel")) {
+                            div(className = "row") {
+                                div(className = "col-xs-12 col-sm-6 col-md-3") {
+                                    link(to = "images/meetup_1_2/1.jpg", attrs = mapOf("data-fancybox" to "kotlin_1_2")) {
+                                        img(className = "img-responsive", src = "images/meetup_1_2/1.jpg")
+                                    }
+                                }
+
+                                div(className = "col-xs-12 col-sm-6 col-md-3") {
+                                    link(to = "images/meetup_1_2/2.jpg", attrs = mapOf("data-fancybox" to "kotlin_1_2")) {
+                                        img(className = "img-responsive", src = "images/meetup_1_2/2.jpg")
+                                    }
+                                }
+
+                                div(className = "col-xs-12 col-sm-6 col-md-3") {
+                                    link(to = "images/meetup_1_2/3.jpg", attrs = mapOf("data-fancybox" to "kotlin_1_2")) {
+                                        img(className = "img-responsive", src = "images/meetup_1_2/3.jpg")
+                                    }
+                                }
+
+                                div(className = "col-xs-12 col-sm-6 col-md-3") {
+                                    link(to = "images/meetup_1_2/4.jpg", attrs = mapOf("data-fancybox" to "kotlin_1_2")) {
+                                        img(className = "img-responsive", src = "images/meetup_1_2/4.jpg")
+                                    }
+                                }
+                            }
+                        }
+
+                        div(id = "kotlin-1_2_41", className = "tab-pane fade", attrs = mapOf("role" to "tabpanel")) {
+                            div(className = "row") {
+                                div(className = "col-xs-12 col-sm-6 col-md-3") {
+                                    link(to = "images/meetup_1_2_41/1.jpg", attrs = mapOf("data-fancybox" to "kotlin-1_2_41")) {
+                                        img(className = "img-responsive", src = "images/meetup_1_2_41/1.jpg")
+                                    }
+                                }
+
+                                div(className = "col-xs-12 col-sm-6 col-md-3") {
+                                    link(to = "images/meetup_1_2_41/2.jpg", attrs = mapOf("data-fancybox" to "kotlin-1_2_41")) {
+                                        img(className = "img-responsive", src = "images/meetup_1_2_41/2.jpg")
+                                    }
+                                }
+
+                                div(className = "col-xs-12 col-sm-6 col-md-3") {
+                                    link(to = "images/meetup_1_2_41/3.jpg", attrs = mapOf("data-fancybox" to "kotlin-1_2_41")) {
+                                        img(className = "img-responsive", src = "images/meetup_1_2_41/3.jpg")
+                                    }
+                                }
+
+                                div(className = "col-xs-12 col-sm-6 col-md-3") {
+                                    link(to = "images/meetup_1_2_41/4.jpg", attrs = mapOf("data-fancybox" to "kotlin-1_2_41")) {
+                                        img(className = "img-responsive", src = "images/meetup_1_2_41/4.jpg")
+                                    }
+                                }
+                            }
+
+                            div(className = "row") {
+                                div(className = "col-xs-12 col-sm-6 col-md-3") {
+                                    link(to = "images/meetup_1_2_41/5.jpg", attrs = mapOf("data-fancybox" to "kotlin-1_2_41")) {
+                                        img(className = "img-responsive", src = "images/meetup_1_2_41/5.jpg")
+                                    }
+                                }
+
+                                div(className = "col-xs-12 col-sm-6 col-md-3") {
+                                    link(to = "images/meetup_1_2_41/6.jpg", attrs = mapOf("data-fancybox" to "kotlin-1_2_41")) {
+                                        img(className = "img-responsive", src = "images/meetup_1_2_41/6.jpg")
+                                    }
+                                }
+
+                                div(className = "col-xs-12 col-sm-6 col-md-3") {
+                                    link(to = "images/meetup_1_2_41/7.jpg", attrs = mapOf("data-fancybox" to "kotlin-1_2_41")) {
+                                        img(className = "img-responsive", src = "images/meetup_1_2_41/7.jpg")
+                                    }
+                                }
+
+                                div(className = "col-xs-12 col-sm-6 col-md-3") {
+                                    link(to = "images/meetup_1_2_41/8.jpg", attrs = mapOf("data-fancybox" to "kotlin-1_2_41")) {
+                                        img(className = "img-responsive", src = "images/meetup_1_2_41/8.jpg")
+                                    }
+                                }
+                            }
+                        }
+
+                        div(id = "mobconf18", className = "tab-pane fade", attrs = mapOf("role" to "tabpanel")) {
+                            div(className = "row") {
+                                div(className = "col-xs-12 col-sm-6 col-md-3") {
+                                    link(to = "images/mobconf18/1.jpg", attrs = mapOf("data-fancybox" to "mobconf18")) {
+                                        img(className = "img-responsive", src = "images/mobconf18/1.jpg")
+                                    }
+                                }
+
+                                div(className = "col-xs-12 col-sm-6 col-md-3") {
+                                    link(to = "images/mobconf18/2.jpg", attrs = mapOf("data-fancybox" to "mobconf18")) {
+                                        img(className = "img-responsive", src = "images/mobconf18/2.jpg")
+                                    }
+                                }
+
+                                div(className = "col-xs-12 col-sm-6 col-md-3") {
+                                    link(to = "images/mobconf18/3.jpg", attrs = mapOf("data-fancybox" to "mobconf18")) {
+                                        img(className = "img-responsive", src = "images/mobconf18/3.jpg")
+                                    }
+                                }
+
+                                div(className = "col-xs-12 col-sm-6 col-md-3") {
+                                    link(to = "images/mobconf18/4.jpg", attrs = mapOf("data-fancybox" to "mobconf18")) {
+                                        img(className = "img-responsive", src = "images/mobconf18/4.jpg")
+                                    }
+                                }
+                            }
+
+                            div(className = "row") {
+                                div(className = "col-xs-12 col-sm-6 col-md-3") {
+                                    link(to = "images/mobconf18/5.jpg", attrs = mapOf("data-fancybox" to "mobconf18")) {
+                                        img(className = "img-responsive", src = "images/mobconf18/5.jpg")
+                                    }
+                                }
+
+                                div(className = "col-xs-12 col-sm-6 col-md-3") {
+                                    link(to = "images/mobconf18/6.jpg", attrs = mapOf("data-fancybox" to "mobconf18")) {
+                                        img(className = "img-responsive", src = "images/mobconf18/6.jpg")
+                                    }
+                                }
+
+                                div(className = "col-xs-12 col-sm-6 col-md-3") {
+                                    link(to = "images/mobconf18/7.jpg", attrs = mapOf("data-fancybox" to "mobconf18")) {
+                                        img(className = "img-responsive", src = "images/mobconf18/7.jpg")
+                                    }
+                                }
+
+                                div(className = "col-xs-12 col-sm-6 col-md-3") {
+                                    link(to = "images/mobconf18/8.jpg", attrs = mapOf("data-fancybox" to "mobconf18")) {
+                                        img(className = "img-responsive", src = "images/mobconf18/8.jpg")
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
         }
 
         div(id = "sponsorship", className = "container-fluid footer") {
-            div(className = "row contact content-ct") {
-                h2("row-title") { text("Sponsorship") }
+            // div(className = "row contact content-ct") {
+            //     h2("row-title") { text("Sponsorship") }
 
-                div(className = "col-md-12 col-sm-12") {
-                    div(className = "pricing") {
-                        div(className = "thumbnail") { div(className = "ti-medall") }
-                        div(className = "title") { text("Gold") }
-                        div(className = "content") {
-                            div(className = "sub-title") { text("4,000 THB") }
+            //     div(className = "col-md-12 col-sm-12") {
+            //         div(className = "pricing") {
+            //             div(className = "thumbnail") { div(className = "ti-medall") }
+            //             div(className = "title") { text("Gold") }
+            //             div(className = "content") {
+            //                 div(className = "sub-title") { text("4,000 THB") }
 
-                            ul {
-                                li {
-                                    italic("1")
-                                    text(" seat guaranteed")
-                                }
+            //                 ul {
+            //                     li {
+            //                         italic("1")
+            //                         text(" seat guaranteed")
+            //                     }
 
-                                li {
-                                    italic("Small")
-                                    text(" logo on a backdrop")
-                                }
-                            }
-                        }
-                    }
+            //                     li {
+            //                         italic("Small")
+            //                         text(" logo on a backdrop")
+            //                     }
+            //                 }
+            //             }
+            //         }
 
-                    div(className = "pricing") {
-                        div(className = "thumbnail") { div(className = "ti-cup") }
-                        div(className = "title") { text("Platinum") }
-                        div(className = "content") {
-                            div(className = "sub-title") { text("5,000 THB") }
+            //         div(className = "pricing") {
+            //             div(className = "thumbnail") { div(className = "ti-cup") }
+            //             div(className = "title") { text("Platinum") }
+            //             div(className = "content") {
+            //                 div(className = "sub-title") { text("5,000 THB") }
 
-                            ul {
-                                li {
-                                    strong("2")
-                                    text(" seats guaranteed")
-                                }
+            //                 ul {
+            //                     li {
+            //                         strong("2")
+            //                         text(" seats guaranteed")
+            //                     }
 
-                                li {
-                                    strong("Big")
-                                    text(" logo on a backdrop")
-                                }
-                            }
-                        }
-                    }
+            //                     li {
+            //                         strong("Big")
+            //                         text(" logo on a backdrop")
+            //                     }
+            //                 }
+            //             }
+            //         }
 
-                    div(className = "pricing") {
-                        div(className = "thumbnail") { div(className = "ti-crown") }
-                        div(className = "title") { text("Diamond") }
-                        div(className = "content") {
-                            div(className = "sub-title") { text("10,000 THB") }
+            //         div(className = "pricing") {
+            //             div(className = "thumbnail") { div(className = "ti-crown") }
+            //             div(className = "title") { text("Diamond") }
+            //             div(className = "content") {
+            //                 div(className = "sub-title") { text("10,000 THB") }
 
-                            ul {
-                                li {
-                                    strong("2")
-                                    text(" seats guaranteed")
-                                }
+            //                 ul {
+            //                     li {
+            //                         strong("2")
+            //                         text(" seats guaranteed")
+            //                     }
 
-                                li {
-                                    strong("Big")
-                                    text(" logo on a backdrop")
-                                }
+            //                     li {
+            //                         strong("Big")
+            //                         text(" logo on a backdrop")
+            //                     }
 
-                                li {
-                                    strong("Logo on presentation slides")
-                                    br()
-                                    span("highlight") { strong("* The slides will be available for download on the internet until the end of time") }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
+            //                     li {
+            //                         strong("Logo on presentation slides")
+            //                         br()
+            //                         span("highlight") { strong("* The slides will be available for download on the internet until the end of time") }
+            //                     }
+            //                 }
+            //             }
+            //         }
+            //     }
+            // }
 
             div(className = "row footer-credit") {
                 div(className = "col-md-6 col-sm-6") {
