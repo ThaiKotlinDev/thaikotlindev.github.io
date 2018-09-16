@@ -138,6 +138,12 @@ fun main(args: Array<String>) {
                                 text("Kotlin 1.2.41")
                             }
                         }
+
+                        li(role = "presentation") {
+                            link(to = "#mobconf18", attrs = mapOf("aria-controls" to "mobconf18", "role" to "tab", "data-toggle" to "tab")) {
+                                text("Mobile Conf 2018")
+                            }
+                        }
                     }
 
                     div(className = "tab-content") {
@@ -328,6 +334,60 @@ fun main(args: Array<String>) {
                                 div(className = "col-xs-12 col-sm-6 col-md-3") {
                                     link(to = "images/meetup_1_2_41/8.jpg", attrs = mapOf("data-fancybox" to "kotlin-1_2_41")) {
                                         img(className = "img-responsive", src = "images/meetup_1_2_41/8.jpg")
+                                    }
+                                }
+                            }
+                        }
+
+                        div(id = "mobconf18", className = "tab-pane fade", attrs = mapOf("role" to "tabpanel")) {
+                            div(className = "row") {
+                                div(className = "col-xs-12 col-sm-6 col-md-3") {
+                                    link(to = "images/mobconf18/1.jpg", attrs = mapOf("data-fancybox" to "mobconf18")) {
+                                        img(className = "img-responsive", src = "images/mobconf18/1.jpg")
+                                    }
+                                }
+
+                                div(className = "col-xs-12 col-sm-6 col-md-3") {
+                                    link(to = "images/mobconf18/2.jpg", attrs = mapOf("data-fancybox" to "mobconf18")) {
+                                        img(className = "img-responsive", src = "images/mobconf18/2.jpg")
+                                    }
+                                }
+
+                                div(className = "col-xs-12 col-sm-6 col-md-3") {
+                                    link(to = "images/mobconf18/3.jpg", attrs = mapOf("data-fancybox" to "mobconf18")) {
+                                        img(className = "img-responsive", src = "images/mobconf18/3.jpg")
+                                    }
+                                }
+
+                                div(className = "col-xs-12 col-sm-6 col-md-3") {
+                                    link(to = "images/mobconf18/4.jpg", attrs = mapOf("data-fancybox" to "mobconf18")) {
+                                        img(className = "img-responsive", src = "images/mobconf18/4.jpg")
+                                    }
+                                }
+                            }
+
+                            div(className = "row") {
+                                div(className = "col-xs-12 col-sm-6 col-md-3") {
+                                    link(to = "images/mobconf18/5.jpg", attrs = mapOf("data-fancybox" to "mobconf18")) {
+                                        img(className = "img-responsive", src = "images/mobconf18/5.jpg")
+                                    }
+                                }
+
+                                div(className = "col-xs-12 col-sm-6 col-md-3") {
+                                    link(to = "images/mobconf18/6.jpg", attrs = mapOf("data-fancybox" to "mobconf18")) {
+                                        img(className = "img-responsive", src = "images/mobconf18/6.jpg")
+                                    }
+                                }
+
+                                div(className = "col-xs-12 col-sm-6 col-md-3") {
+                                    link(to = "images/mobconf18/7.jpg", attrs = mapOf("data-fancybox" to "mobconf18")) {
+                                        img(className = "img-responsive", src = "images/mobconf18/7.jpg")
+                                    }
+                                }
+
+                                div(className = "col-xs-12 col-sm-6 col-md-3") {
+                                    link(to = "images/mobconf18/8.jpg", attrs = mapOf("data-fancybox" to "mobconf18")) {
+                                        img(className = "img-responsive", src = "images/mobconf18/8.jpg")
                                     }
                                 }
                             }
