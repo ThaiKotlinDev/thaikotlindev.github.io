@@ -23,13 +23,13 @@ fun main(args: Array<String>) {
         div(className = "container-fluid") {
             div(id = "kotlin", className = "row hero-header") {
                 div(className = "col-md-9") {
-                    img(className = "logo", src = "images/meetup-logo.png")
+                    // img(className = "logo", src = "images/meetup-logo.png")
 
                     h1 {
                         text("Kotlin Meet Up 1.2.61")
                     }
 
-                    h3 { text("to boost up your skill!") }
+                    h3 { text("18:00 - 21:00 @ Learn Hub") }
                     h4 { text("18 October, 2018") }
 
                     link("#next-event", "btn btn-lg btn-red page-scroll") {
@@ -78,25 +78,22 @@ fun main(args: Array<String>) {
 
         div(id = "next-event", className = "container-fluid tickets") {
             div(className = "row me-row content-ct") {
-                h2("row-title") { text("Kotlin Workshop") }
+                h2("row-title") { text("Kotlin Meet Up 1.2.61") }
 
                 div(className = "col-md-12 col-sm-12") {
                     h2 { text("Ticket") }
-                    p("price", "0 THB")
+                    p("price", "Free")
                     div(className = "detail") {
                         h3 {
                             text("Everything you need to know about writing ")
                             italic("Android")
                             text(" apps in ")
                             strong("Kotlin")
-                            p(text = "The workshop has 4 sessions.")
                         }
 
                         ul {
-                            li(className = "text-left") { text("Intro to Kotlin") }
-                            li(className = "text-left") { text("Kotlin for Android Workshop") }
-                            li(className = "text-left") { text("Workshop: Miracle of stdLib") }
-                            li(className = "text-left") { text("Non-JVM Kotlin") }
+                            li(className = "text-left") { text("Coroutines by TBD") }
+                            li(className = "text-left") { text("Create View-based Android apps with Conductor by Kittinun Vantasin, Mobile developer @ Mercari") }
                         }
                     }
 

@@ -370,7 +370,7 @@ var output = function (_, Kotlin) {
     return Unit;
   }
   function main$lambda$lambda$lambda$lambda$lambda_1($receiver) {
-    $receiver.text_61zpoe$('to boost up your skill!');
+    $receiver.text_61zpoe$('18:00 - 21:00 @ Learn Hub');
     return Unit;
   }
   function main$lambda$lambda$lambda$lambda$lambda_2($receiver) {
@@ -383,7 +383,6 @@ var output = function (_, Kotlin) {
     return Unit;
   }
   function main$lambda$lambda$lambda$lambda_0($receiver) {
-    $receiver.img_lmu3us$(void 0, 'logo', 'images/meetup-logo.png');
     $receiver.h1_tlpz1u$(main$lambda$lambda$lambda$lambda$lambda_0);
     $receiver.h3_tlpz1u$(main$lambda$lambda$lambda$lambda$lambda_1);
     $receiver.h4_tlpz1u$(main$lambda$lambda$lambda$lambda$lambda_2);
@@ -489,7 +488,7 @@ var output = function (_, Kotlin) {
     return Unit;
   }
   function main$lambda$lambda$lambda$lambda_4($receiver) {
-    $receiver.text_61zpoe$('Kotlin Workshop');
+    $receiver.text_61zpoe$('Kotlin Meet Up 1.2.61');
     return Unit;
   }
   function main$lambda$lambda$lambda$lambda$lambda_6($receiver) {
@@ -501,30 +500,19 @@ var output = function (_, Kotlin) {
     $receiver.italic_puj7f4$('Android');
     $receiver.text_61zpoe$(' apps in ');
     $receiver.strong_61zpoe$('Kotlin');
-    $receiver.p_puj7f4$(void 0, 'The workshop has 4 sessions.');
     return Unit;
   }
   function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_0($receiver) {
-    $receiver.text_61zpoe$('Intro to Kotlin');
+    $receiver.text_61zpoe$('Coroutines by TBD');
     return Unit;
   }
   function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_1($receiver) {
-    $receiver.text_61zpoe$('Kotlin for Android Workshop');
-    return Unit;
-  }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_2($receiver) {
-    $receiver.text_61zpoe$('Workshop: Miracle of stdLib');
-    return Unit;
-  }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_3($receiver) {
-    $receiver.text_61zpoe$('Non-JVM Kotlin');
+    $receiver.text_61zpoe$('Create View-based Android apps with Conductor by Kittinun Vantasin, Mobile developer @ Mercari');
     return Unit;
   }
   function main$lambda$lambda$lambda$lambda$lambda$lambda_4($receiver) {
     $receiver.li_7jt3u2$('text-left', void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_0);
     $receiver.li_7jt3u2$('text-left', void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_1);
-    $receiver.li_7jt3u2$('text-left', void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_2);
-    $receiver.li_7jt3u2$('text-left', void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_3);
     return Unit;
   }
   function main$lambda$lambda$lambda$lambda$lambda_7($receiver) {
@@ -534,7 +522,7 @@ var output = function (_, Kotlin) {
   }
   function main$lambda$lambda$lambda$lambda_5($receiver) {
     $receiver.h2_9jyg1o$(void 0, main$lambda$lambda$lambda$lambda$lambda_6);
-    $receiver.p_puj7f4$('price', '0 THB');
+    $receiver.p_puj7f4$('price', 'Free');
     $receiver.div_qf6fe3$(void 0, 'detail', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda_7);
     $receiver.br();
     $receiver.br();
@@ -553,44 +541,44 @@ var output = function (_, Kotlin) {
     $receiver.text_61zpoe$('Past Events');
     return Unit;
   }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_4($receiver) {
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_2($receiver) {
     $receiver.text_61zpoe$('Kotlin Meetup #1');
     return Unit;
   }
   function main$lambda$lambda$lambda$lambda$lambda$lambda_5($receiver) {
-    $receiver.link_hsosmf$('#meetup1', void 0, mapOf_0([to('aria-controls', 'meetup1'), to('role', 'tab'), to('data-toggle', 'tab')]), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_4);
+    $receiver.link_hsosmf$('#meetup1', void 0, mapOf_0([to('aria-controls', 'meetup1'), to('role', 'tab'), to('data-toggle', 'tab')]), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_2);
     return Unit;
   }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_5($receiver) {
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_3($receiver) {
     $receiver.text_61zpoe$('Kotlin 1.1');
     return Unit;
   }
   function main$lambda$lambda$lambda$lambda$lambda$lambda_6($receiver) {
-    $receiver.link_hsosmf$('#kotlin-bkk', void 0, mapOf_0([to('aria-controls', 'kotlin-bkk'), to('role', 'tab'), to('data-toggle', 'tab')]), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_5);
+    $receiver.link_hsosmf$('#kotlin-bkk', void 0, mapOf_0([to('aria-controls', 'kotlin-bkk'), to('role', 'tab'), to('data-toggle', 'tab')]), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_3);
     return Unit;
   }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_6($receiver) {
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_4($receiver) {
     $receiver.text_61zpoe$('Kotlin Workshop');
     return Unit;
   }
   function main$lambda$lambda$lambda$lambda$lambda$lambda_7($receiver) {
-    $receiver.link_hsosmf$('#kotlin-workshop', void 0, mapOf_0([to('aria-controls', 'workshop'), to('role', 'tab'), to('data-toggle', 'tab')]), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_6);
+    $receiver.link_hsosmf$('#kotlin-workshop', void 0, mapOf_0([to('aria-controls', 'workshop'), to('role', 'tab'), to('data-toggle', 'tab')]), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_4);
     return Unit;
   }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_7($receiver) {
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_5($receiver) {
     $receiver.text_61zpoe$('Kotlin 1.2');
     return Unit;
   }
   function main$lambda$lambda$lambda$lambda$lambda$lambda_8($receiver) {
-    $receiver.link_hsosmf$('#kotlin-1_2', void 0, mapOf_0([to('aria-controls', 'kotlin-1_2'), to('role', 'tab'), to('data-toggle', 'tab')]), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_7);
+    $receiver.link_hsosmf$('#kotlin-1_2', void 0, mapOf_0([to('aria-controls', 'kotlin-1_2'), to('role', 'tab'), to('data-toggle', 'tab')]), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_5);
     return Unit;
   }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_8($receiver) {
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_6($receiver) {
     $receiver.text_61zpoe$('Kotlin 1.2.41');
     return Unit;
   }
   function main$lambda$lambda$lambda$lambda$lambda$lambda_9($receiver) {
-    $receiver.link_hsosmf$('#kotlin-1_2_41', void 0, mapOf_0([to('aria-controls', 'kotlin-1_2_41'), to('role', 'tab'), to('data-toggle', 'tab')]), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_8);
+    $receiver.link_hsosmf$('#kotlin-1_2_41', void 0, mapOf_0([to('aria-controls', 'kotlin-1_2_41'), to('role', 'tab'), to('data-toggle', 'tab')]), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_6);
     return Unit;
   }
   function main$lambda$lambda$lambda$lambda$lambda_8($receiver) {
@@ -633,7 +621,7 @@ var output = function (_, Kotlin) {
     $receiver.link_hsosmf$('images/meetup/04.jpg', void 0, mapOf(to('data-fancybox', 'meetup1')), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_3);
     return Unit;
   }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_9($receiver) {
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_7($receiver) {
     $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_0);
     $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_1);
     $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_2);
@@ -641,7 +629,7 @@ var output = function (_, Kotlin) {
     return Unit;
   }
   function main$lambda$lambda$lambda$lambda$lambda$lambda_10($receiver) {
-    $receiver.div_qf6fe3$(void 0, 'row', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_9);
+    $receiver.div_qf6fe3$(void 0, 'row', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_7);
     return Unit;
   }
   function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_4($receiver) {
@@ -676,7 +664,7 @@ var output = function (_, Kotlin) {
     $receiver.link_hsosmf$('images/kotlinbkk/04.jpg', void 0, mapOf(to('data-fancybox', 'kotlinbkk')), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_7);
     return Unit;
   }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_10($receiver) {
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_8($receiver) {
     $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_4);
     $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_5);
     $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_6);
@@ -684,7 +672,7 @@ var output = function (_, Kotlin) {
     return Unit;
   }
   function main$lambda$lambda$lambda$lambda$lambda$lambda_11($receiver) {
-    $receiver.div_qf6fe3$(void 0, 'row', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_10);
+    $receiver.div_qf6fe3$(void 0, 'row', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_8);
     return Unit;
   }
   function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_8($receiver) {
@@ -719,7 +707,7 @@ var output = function (_, Kotlin) {
     $receiver.link_hsosmf$('images/workshop/workshop_4.jpg', void 0, mapOf(to('data-fancybox', 'workshop')), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_11);
     return Unit;
   }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_11($receiver) {
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_9($receiver) {
     $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_8);
     $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_9);
     $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_10);
@@ -758,7 +746,7 @@ var output = function (_, Kotlin) {
     $receiver.link_hsosmf$('images/workshop/workshop_8.jpg', void 0, mapOf(to('data-fancybox', 'workshop')), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_15);
     return Unit;
   }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_12($receiver) {
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_10($receiver) {
     $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_12);
     $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_13);
     $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_14);
@@ -766,8 +754,8 @@ var output = function (_, Kotlin) {
     return Unit;
   }
   function main$lambda$lambda$lambda$lambda$lambda$lambda_12($receiver) {
-    $receiver.div_qf6fe3$(void 0, 'row', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_11);
-    $receiver.div_qf6fe3$(void 0, 'row', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_12);
+    $receiver.div_qf6fe3$(void 0, 'row', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_9);
+    $receiver.div_qf6fe3$(void 0, 'row', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_10);
     return Unit;
   }
   function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_16($receiver) {
@@ -802,7 +790,7 @@ var output = function (_, Kotlin) {
     $receiver.link_hsosmf$('images/meetup_1_2/4.jpg', void 0, mapOf(to('data-fancybox', 'kotlin_1_2')), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_19);
     return Unit;
   }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_13($receiver) {
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_11($receiver) {
     $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_16);
     $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_17);
     $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_18);
@@ -810,7 +798,7 @@ var output = function (_, Kotlin) {
     return Unit;
   }
   function main$lambda$lambda$lambda$lambda$lambda$lambda_13($receiver) {
-    $receiver.div_qf6fe3$(void 0, 'row', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_13);
+    $receiver.div_qf6fe3$(void 0, 'row', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_11);
     return Unit;
   }
   function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_20($receiver) {
@@ -845,7 +833,7 @@ var output = function (_, Kotlin) {
     $receiver.link_hsosmf$('images/meetup_1_2_41/4.jpg', void 0, mapOf(to('data-fancybox', 'kotlin-1_2_41')), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_23);
     return Unit;
   }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_14($receiver) {
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_12($receiver) {
     $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_20);
     $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_21);
     $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_22);
@@ -884,7 +872,7 @@ var output = function (_, Kotlin) {
     $receiver.link_hsosmf$('images/meetup_1_2_41/8.jpg', void 0, mapOf(to('data-fancybox', 'kotlin-1_2_41')), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_27);
     return Unit;
   }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_15($receiver) {
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_13($receiver) {
     $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_24);
     $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_25);
     $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_26);
@@ -892,8 +880,8 @@ var output = function (_, Kotlin) {
     return Unit;
   }
   function main$lambda$lambda$lambda$lambda$lambda$lambda_14($receiver) {
-    $receiver.div_qf6fe3$(void 0, 'row', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_14);
-    $receiver.div_qf6fe3$(void 0, 'row', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_15);
+    $receiver.div_qf6fe3$(void 0, 'row', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_12);
+    $receiver.div_qf6fe3$(void 0, 'row', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_13);
     return Unit;
   }
   function main$lambda$lambda$lambda$lambda$lambda_9($receiver) {
@@ -932,20 +920,20 @@ var output = function (_, Kotlin) {
     $receiver.p_9jyg1o$(void 0, main$lambda$lambda$lambda$lambda$lambda_10);
     return Unit;
   }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_16($receiver) {
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_14($receiver) {
     $receiver.italic_puj7f4$('ti-facebook', ' Facebook Group');
     return Unit;
   }
   function main$lambda$lambda$lambda$lambda$lambda$lambda_16($receiver) {
-    $receiver.link_hsosmf$('https://www.facebook.com/groups/872547279487598/?ref=bookmarks', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_16);
+    $receiver.link_hsosmf$('https://www.facebook.com/groups/872547279487598/?ref=bookmarks', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_14);
     return Unit;
   }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_17($receiver) {
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_15($receiver) {
     $receiver.italic_puj7f4$('ti-email', ' Contact Us');
     return Unit;
   }
   function main$lambda$lambda$lambda$lambda$lambda$lambda_17($receiver) {
-    $receiver.link_hsosmf$('mailto:thaikotlindev@gmail.com', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_17);
+    $receiver.link_hsosmf$('mailto:thaikotlindev@gmail.com', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_15);
     return Unit;
   }
   function main$lambda$lambda$lambda$lambda$lambda_11($receiver) {
@@ -1283,7 +1271,7 @@ var output = function (_, Kotlin) {
   package$model.Staff = Staff;
   menus = listOf([new Menu('Hello Kotlin', '#kotlin'), new Menu('Staff', '#staff'), new Menu('Next Event', '#next-event'), new Menu('Events', '#events')]);
   features = listOf([new Feature('Productivity', 'Some people say Kotlin is like Java on steroid, it can do all the stuff Java can do, plus\n                        varieties of language features will boost your productivity like never before.', 'ti-stats-up'), new Feature('Interoperable', 'Kotlin is statically typed, modern and mature. It was designed with Java interoperability\n                        in mind so you can write Kotlin everywhere Java goes, seamlessly, side by side.\n                        All those libraries written in Java over the past 20 years are still work.', 'ti-check'), new Feature('Versatile', 'Kotlin has great tooling support. Why? Because it was created by JetBrains, the people who\n                        built IntelliJ which Android Studio is based on, and\n                        we love Android Studio.', 'ti-world'), new Feature('First-class citizen', 'Recently in IO \u201917, Google announced a first class support for Kotlin in Android development.\n                        People went crazy about this. There are tons of videos and articles about Kotlin all over the internet.\n                        All the cool kids these day write Kotlin, so why don\u2019t you.', 'ti-android')]);
-  staffs = listOf([new Staff('Birth', 'verachad.jpg', 'Senior Android Developer @ Agoda', mutableListOf([new Contact('https://github.com/verachadW', ContactType$GITHUB_getInstance()), new Contact('https://twitter.com/verachadw', ContactType$TWITTER_getInstance()), new Contact('https://www.linkedin.com/in/verachadw', ContactType$LINKEDIN_getInstance())])), new Staff('Dew', 'dew.jpg', 'Mobile Developer @ Santora Nakama & YesMom, Co-Founder/Editor at Black Lens Publication', mutableListOf([new Contact('http://blacklenspub.com', ContactType$WEB_getInstance()), new Contact('https://github.com/dewparin', ContactType$GITHUB_getInstance()), new Contact('https://medium.com/@dewparin', ContactType$MEDIUM_getInstance()), new Contact('https://twitter.com/dewparin', ContactType$TWITTER_getInstance())])), new Staff('Travis P', 'travisp.jpg', 'Kotlin God @ Appsynth, Co-Founder/Editor at Black Lens Publication', mutableListOf([new Contact('http://blacklenspub.com', ContactType$WEB_getInstance()), new Contact('https://github.com/travisp101', ContactType$GITHUB_getInstance()), new Contact('https://www.facebook.com/travisp101', ContactType$FACEBOOK_getInstance()), new Contact('https://twitter.com/travisp101', ContactType$TWITTER_getInstance())])), new Staff('Pop', 'pop.jpg', 'Android \u2764 Kotlin @ ShopSpot', mutableListOf([new Contact('https://github.com/minibugdev', ContactType$GITHUB_getInstance()), new Contact('https://www.facebook.com/teeranai.b', ContactType$FACEBOOK_getInstance()), new Contact('https://www.linkedin.com/in/teeranaib', ContactType$LINKEDIN_getInstance())])), new Staff('Babe', 'babe.jpg', 'Mobile Develoepr @ Event Pop', mutableListOf([new Contact('https://github.com/babedev', ContactType$GITHUB_getInstance()), new Contact('https://medium.com/@babedev', ContactType$MEDIUM_getInstance()), new Contact('https://www.facebook.com/babedev', ContactType$FACEBOOK_getInstance()), new Contact('https://plus.google.com/+ChristopherNg', ContactType$GOOGLE_getInstance())])), new Staff('Ju', 'ju.jpg', 'Developer & Drummer', mutableListOf([new Contact('https://github.com/judrummer', ContactType$GITHUB_getInstance()), new Contact('https://www.youtube.com/c/JuDrummer', ContactType$YOUTUBE_getInstance()), new Contact('https://www.facebook.com/judrummer', ContactType$FACEBOOK_getInstance())])), new Staff('Air', 'air.jpg', 'Android Developer @ Agoda'), new Staff('Tow', 'tow.jpg', 'Freelance Android Developer')]);
+  staffs = listOf([new Staff('Birth', 'verachad.jpg', 'Senior Android Developer @ Agoda', mutableListOf([new Contact('https://github.com/verachadW', ContactType$GITHUB_getInstance()), new Contact('https://twitter.com/verachadw', ContactType$TWITTER_getInstance()), new Contact('https://www.linkedin.com/in/verachadw', ContactType$LINKEDIN_getInstance())])), new Staff('Dew', 'dew.jpg', 'Mobile Developer @ Ampos, Co-Founder/Editor at Black Lens Publication', mutableListOf([new Contact('http://blacklenspub.com', ContactType$WEB_getInstance()), new Contact('https://github.com/dewparin', ContactType$GITHUB_getInstance()), new Contact('https://medium.com/@dewparin', ContactType$MEDIUM_getInstance()), new Contact('https://twitter.com/dewparin', ContactType$TWITTER_getInstance())])), new Staff('Travis P', 'travisp.jpg', 'Kotlin God @ SCB, Co-Founder/Editor at Black Lens Publication', mutableListOf([new Contact('http://blacklenspub.com', ContactType$WEB_getInstance()), new Contact('https://github.com/travisp101', ContactType$GITHUB_getInstance()), new Contact('https://www.facebook.com/travisp101', ContactType$FACEBOOK_getInstance()), new Contact('https://twitter.com/travisp101', ContactType$TWITTER_getInstance())])), new Staff('Pop', 'pop.jpg', 'Android \u2764 Kotlin @ King Power', mutableListOf([new Contact('https://github.com/minibugdev', ContactType$GITHUB_getInstance()), new Contact('https://www.facebook.com/teeranai.b', ContactType$FACEBOOK_getInstance()), new Contact('https://www.linkedin.com/in/teeranaib', ContactType$LINKEDIN_getInstance())])), new Staff('Babe', 'babe.jpg', 'Mobile Develoepr @ Event Pop, Editor at Black Lens Publication', mutableListOf([new Contact('http://blacklenspub.com', ContactType$WEB_getInstance()), new Contact('https://github.com/babedev', ContactType$GITHUB_getInstance()), new Contact('https://medium.com/@babedev', ContactType$MEDIUM_getInstance()), new Contact('https://www.facebook.com/babedev', ContactType$FACEBOOK_getInstance()), new Contact('https://plus.google.com/+ChristopherNg', ContactType$GOOGLE_getInstance())])), new Staff('Ju', 'ju.jpg', 'Developer & Drummer', mutableListOf([new Contact('https://github.com/judrummer', ContactType$GITHUB_getInstance()), new Contact('https://www.youtube.com/c/JuDrummer', ContactType$YOUTUBE_getInstance()), new Contact('https://www.facebook.com/judrummer', ContactType$FACEBOOK_getInstance())])), new Staff('Air', 'air.jpg', 'Android Developer @ Agoda'), new Staff('Tow', 'tow.jpg', 'Freelance Android Developer')]);
   main([]);
   Kotlin.defineModule('output', _);
   return _;

@@ -41,7 +41,7 @@ val staffs = listOf(
                         Contact("https://www.linkedin.com/in/verachadw", ContactType.LINKEDIN)
                 )),
 
-        Staff("Dew", "dew.jpg", "Mobile Developer @ Santora Nakama & YesMom, Co-Founder/Editor at Black Lens Publication",
+        Staff("Dew", "dew.jpg", "Mobile Developer @ Ampos, Co-Founder/Editor at Black Lens Publication",
                 mutableListOf(
                         Contact("http://blacklenspub.com", ContactType.WEB),
                         Contact("https://github.com/dewparin", ContactType.GITHUB),
@@ -49,7 +49,7 @@ val staffs = listOf(
                         Contact("https://twitter.com/dewparin", ContactType.TWITTER)
                 )),
 
-        Staff("Travis P", "travisp.jpg", "Kotlin God @ Appsynth, Co-Founder/Editor at Black Lens Publication",
+        Staff("Travis P", "travisp.jpg", "Kotlin God @ SCB, Co-Founder/Editor at Black Lens Publication",
                 mutableListOf(
                         Contact("http://blacklenspub.com", ContactType.WEB),
                         Contact("https://github.com/travisp101", ContactType.GITHUB),
@@ -57,15 +57,16 @@ val staffs = listOf(
                         Contact("https://twitter.com/travisp101", ContactType.TWITTER)
                 )),
 
-        Staff("Pop", "pop.jpg", "Android ❤ Kotlin @ ShopSpot",
+        Staff("Pop", "pop.jpg", "Android ❤ Kotlin @ King Power",
                 mutableListOf(
                         Contact("https://github.com/minibugdev", ContactType.GITHUB),
                         Contact("https://www.facebook.com/teeranai.b", ContactType.FACEBOOK),
                         Contact("https://www.linkedin.com/in/teeranaib", ContactType.LINKEDIN)
                 )),
 
-        Staff("Babe", "babe.jpg", "Mobile Develoepr @ Event Pop",
+        Staff("Babe", "babe.jpg", "Mobile Develoepr @ Event Pop, Editor at Black Lens Publication",
                 mutableListOf(
+                        Contact("http://blacklenspub.com", ContactType.WEB),
                         Contact("https://github.com/babedev", ContactType.GITHUB),
                         Contact("https://medium.com/@babedev", ContactType.MEDIUM),
                         Contact("https://www.facebook.com/babedev", ContactType.FACEBOOK),
