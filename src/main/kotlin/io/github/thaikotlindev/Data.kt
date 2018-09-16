@@ -10,8 +10,9 @@ val menus = listOf(
         Menu("Hello Kotlin", "#kotlin"),
         Menu("Staff", "#staff"),
         Menu("Next Event", "#next-event"),
-        Menu("Events", "#events"),
-        Menu("Sponsorship", "#sponsorship")
+        Menu("Events", "#events")
+        // ,
+        // Menu("Sponsorship", "#sponsorship")
 )
 
 val features = listOf(
@@ -63,7 +64,7 @@ val staffs = listOf(
                         Contact("https://www.linkedin.com/in/teeranaib", ContactType.LINKEDIN)
                 )),
 
-        Staff("Babe", "babe.jpg", "Kotlinian @ Genxas",
+        Staff("Babe", "babe.jpg", "Mobile Develoepr @ Event Pop",
                 mutableListOf(
                         Contact("https://github.com/babedev", ContactType.GITHUB),
                         Contact("https://medium.com/@babedev", ContactType.MEDIUM),
