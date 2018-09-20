@@ -503,7 +503,7 @@ var output = function (_, Kotlin) {
     return Unit;
   }
   function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_0($receiver) {
-    $receiver.text_61zpoe$('Write a better code with a Controller by Kittinun Vantasin, Mobile developer @ Mercari');
+    $receiver.text_61zpoe$("Write a better code with Conductor's Controller by Kittinun Vantasin, Mobile developer @ Mercari");
     return Unit;
   }
   function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_1($receiver) {
