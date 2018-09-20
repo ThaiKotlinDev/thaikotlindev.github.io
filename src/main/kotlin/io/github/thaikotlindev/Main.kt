@@ -92,7 +92,7 @@ fun main(args: Array<String>) {
                         }
 
                         ul {
-                            li(className = "text-left") { text("Write a better code with a Controller by Kittinun Vantasin, Mobile developer @ Mercari") }
+                            li(className = "text-left") { text("Write a better code with Conductor's Controller by Kittinun Vantasin, Mobile developer @ Mercari") }
                             li(className = "text-left") { text("TBD") }
                         }
                     }
