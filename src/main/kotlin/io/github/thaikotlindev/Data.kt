@@ -64,7 +64,7 @@ val staffs = listOf(
                         Contact("https://www.linkedin.com/in/teeranaib", ContactType.LINKEDIN)
                 )),
 
-        Staff("Babe", "babe.jpg", "Mobile Develoepr @ Event Pop, Editor at Black Lens Publication",
+        Staff("Babe", "babe.jpg", "Mobile Developer @ Event Pop, Editor at Black Lens Publication",
                 mutableListOf(
                         Contact("http://blacklenspub.com", ContactType.WEB),
                         Contact("https://github.com/babedev", ContactType.GITHUB),

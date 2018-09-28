@@ -93,7 +93,7 @@ fun main(args: Array<String>) {
 
                         ul {
                             li(className = "text-left") { text("Write a better code with Conductor's Controller by Kittinun Vantasin, Mobile developer @ Mercari") }
-                            li(className = "text-left") { text("TBD") }
+                            li(className = "text-left") { text("Start your Firebase admin with Kotlin by Kotlin2JS by Theerasan Tonthonkam, Android develoepr @ Eatigo") }
                         }
                     }
 
