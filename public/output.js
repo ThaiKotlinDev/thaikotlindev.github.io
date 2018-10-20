@@ -589,6 +589,14 @@ var output = function (_, Kotlin) {
     $receiver.link_hsosmf$('#mobconf18', void 0, mapOf_0([to('aria-controls', 'mobconf18'), to('role', 'tab'), to('data-toggle', 'tab')]), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_7);
     return Unit;
   }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_8($receiver) {
+    $receiver.text_61zpoe$('Kotlin 1.2.70');
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda_11($receiver) {
+    $receiver.link_hsosmf$('#kotlin-1_2_70', void 0, mapOf_0([to('aria-controls', 'kotlin-1_2_70'), to('role', 'tab'), to('data-toggle', 'tab')]), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_8);
+    return Unit;
+  }
   function main$lambda$lambda$lambda$lambda$lambda_8($receiver) {
     $receiver.li_7jt3u2$('active', 'presentation', main$lambda$lambda$lambda$lambda$lambda$lambda_5);
     $receiver.li_7jt3u2$(void 0, 'presentation', main$lambda$lambda$lambda$lambda$lambda$lambda_6);
@@ -596,6 +604,7 @@ var output = function (_, Kotlin) {
     $receiver.li_7jt3u2$(void 0, 'presentation', main$lambda$lambda$lambda$lambda$lambda$lambda_8);
     $receiver.li_7jt3u2$(void 0, 'presentation', main$lambda$lambda$lambda$lambda$lambda$lambda_9);
     $receiver.li_7jt3u2$(void 0, 'presentation', main$lambda$lambda$lambda$lambda$lambda$lambda_10);
+    $receiver.li_7jt3u2$(void 0, 'presentation', main$lambda$lambda$lambda$lambda$lambda$lambda_11);
     return Unit;
   }
   function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_0($receiver) {
@@ -630,15 +639,15 @@ var output = function (_, Kotlin) {
     $receiver.link_hsosmf$('images/meetup/04.jpg', void 0, mapOf(to('data-fancybox', 'meetup1')), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_3);
     return Unit;
   }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_8($receiver) {
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_9($receiver) {
     $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_0);
     $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_1);
     $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_2);
     $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_3);
     return Unit;
   }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda_11($receiver) {
-    $receiver.div_qf6fe3$(void 0, 'row', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_8);
+  function main$lambda$lambda$lambda$lambda$lambda$lambda_12($receiver) {
+    $receiver.div_qf6fe3$(void 0, 'row', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_9);
     return Unit;
   }
   function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_4($receiver) {
@@ -673,15 +682,15 @@ var output = function (_, Kotlin) {
     $receiver.link_hsosmf$('images/kotlinbkk/04.jpg', void 0, mapOf(to('data-fancybox', 'kotlinbkk')), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_7);
     return Unit;
   }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_9($receiver) {
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_10($receiver) {
     $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_4);
     $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_5);
     $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_6);
     $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_7);
     return Unit;
   }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda_12($receiver) {
-    $receiver.div_qf6fe3$(void 0, 'row', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_9);
+  function main$lambda$lambda$lambda$lambda$lambda$lambda_13($receiver) {
+    $receiver.div_qf6fe3$(void 0, 'row', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_10);
     return Unit;
   }
   function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_8($receiver) {
@@ -716,7 +725,7 @@ var output = function (_, Kotlin) {
     $receiver.link_hsosmf$('images/workshop/workshop_4.jpg', void 0, mapOf(to('data-fancybox', 'workshop')), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_11);
     return Unit;
   }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_10($receiver) {
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_11($receiver) {
     $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_8);
     $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_9);
     $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_10);
@@ -755,16 +764,16 @@ var output = function (_, Kotlin) {
     $receiver.link_hsosmf$('images/workshop/workshop_8.jpg', void 0, mapOf(to('data-fancybox', 'workshop')), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_15);
     return Unit;
   }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_11($receiver) {
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_12($receiver) {
     $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_12);
     $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_13);
     $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_14);
     $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_15);
     return Unit;
   }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda_13($receiver) {
-    $receiver.div_qf6fe3$(void 0, 'row', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_10);
+  function main$lambda$lambda$lambda$lambda$lambda$lambda_14($receiver) {
     $receiver.div_qf6fe3$(void 0, 'row', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_11);
+    $receiver.div_qf6fe3$(void 0, 'row', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_12);
     return Unit;
   }
   function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_16($receiver) {
@@ -799,7 +808,7 @@ var output = function (_, Kotlin) {
     $receiver.link_hsosmf$('images/meetup_1_2/4.jpg', void 0, mapOf(to('data-fancybox', 'kotlin_1_2')), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_19);
     return Unit;
   }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_12($receiver) {
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_13($receiver) {
     $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_16);
     $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_17);
     $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_18);
@@ -838,16 +847,16 @@ var output = function (_, Kotlin) {
     $receiver.link_hsosmf$('images/meetup_1_2/8.jpg', void 0, mapOf(to('data-fancybox', 'kotlin_1_2')), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_23);
     return Unit;
   }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_13($receiver) {
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_14($receiver) {
     $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_20);
     $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_21);
     $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_22);
     $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_23);
     return Unit;
   }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda_14($receiver) {
-    $receiver.div_qf6fe3$(void 0, 'row', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_12);
+  function main$lambda$lambda$lambda$lambda$lambda$lambda_15($receiver) {
     $receiver.div_qf6fe3$(void 0, 'row', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_13);
+    $receiver.div_qf6fe3$(void 0, 'row', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_14);
     return Unit;
   }
   function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_24($receiver) {
@@ -882,7 +891,7 @@ var output = function (_, Kotlin) {
     $receiver.link_hsosmf$('images/meetup_1_2_41/4.jpg', void 0, mapOf(to('data-fancybox', 'kotlin-1_2_41')), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_27);
     return Unit;
   }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_14($receiver) {
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_15($receiver) {
     $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_24);
     $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_25);
     $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_26);
@@ -921,16 +930,16 @@ var output = function (_, Kotlin) {
     $receiver.link_hsosmf$('images/meetup_1_2_41/8.jpg', void 0, mapOf(to('data-fancybox', 'kotlin-1_2_41')), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_31);
     return Unit;
   }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_15($receiver) {
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_16($receiver) {
     $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_28);
     $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_29);
     $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_30);
     $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_31);
     return Unit;
   }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda_15($receiver) {
-    $receiver.div_qf6fe3$(void 0, 'row', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_14);
+  function main$lambda$lambda$lambda$lambda$lambda$lambda_16($receiver) {
     $receiver.div_qf6fe3$(void 0, 'row', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_15);
+    $receiver.div_qf6fe3$(void 0, 'row', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_16);
     return Unit;
   }
   function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_32($receiver) {
@@ -965,7 +974,7 @@ var output = function (_, Kotlin) {
     $receiver.link_hsosmf$('images/mobconf18/4.jpg', void 0, mapOf(to('data-fancybox', 'mobconf18')), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_35);
     return Unit;
   }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_16($receiver) {
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_17($receiver) {
     $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_32);
     $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_33);
     $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_34);
@@ -1004,25 +1013,109 @@ var output = function (_, Kotlin) {
     $receiver.link_hsosmf$('images/mobconf18/8.jpg', void 0, mapOf(to('data-fancybox', 'mobconf18')), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_39);
     return Unit;
   }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_17($receiver) {
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_18($receiver) {
     $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_36);
     $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_37);
     $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_38);
     $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_39);
     return Unit;
   }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda_16($receiver) {
-    $receiver.div_qf6fe3$(void 0, 'row', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_16);
+  function main$lambda$lambda$lambda$lambda$lambda$lambda_17($receiver) {
     $receiver.div_qf6fe3$(void 0, 'row', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_17);
+    $receiver.div_qf6fe3$(void 0, 'row', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_18);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_40($receiver) {
+    $receiver.img_lmu3us$(void 0, 'img-responsive', 'images/meetup_1_2_70/1.jpg');
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_40($receiver) {
+    $receiver.link_hsosmf$('images/meetup_1_2_70/1.jpg', void 0, mapOf(to('data-fancybox', 'kotlin-1_2_70')), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_40);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_41($receiver) {
+    $receiver.img_lmu3us$(void 0, 'img-responsive', 'images/meetup_1_2_70/2.jpg');
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_41($receiver) {
+    $receiver.link_hsosmf$('images/meetup_1_2_70/2.jpg', void 0, mapOf(to('data-fancybox', 'kotlin-1_2_70')), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_41);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_42($receiver) {
+    $receiver.img_lmu3us$(void 0, 'img-responsive', 'images/meetup_1_2_70/3.jpg');
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_42($receiver) {
+    $receiver.link_hsosmf$('images/meetup_1_2_70/3.jpg', void 0, mapOf(to('data-fancybox', 'kotlin-1_2_70')), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_42);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_43($receiver) {
+    $receiver.img_lmu3us$(void 0, 'img-responsive', 'images/meetup_1_2_70/4.jpg');
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_43($receiver) {
+    $receiver.link_hsosmf$('images/meetup_1_2_70/4.jpg', void 0, mapOf(to('data-fancybox', 'kotlin-1_2_70')), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_43);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_19($receiver) {
+    $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_40);
+    $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_41);
+    $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_42);
+    $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_43);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_44($receiver) {
+    $receiver.img_lmu3us$(void 0, 'img-responsive', 'images/meetup_1_2_70/5.jpg');
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_44($receiver) {
+    $receiver.link_hsosmf$('images/meetup_1_2_70/5.jpg', void 0, mapOf(to('data-fancybox', 'kotlin-1_2_70')), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_44);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_45($receiver) {
+    $receiver.img_lmu3us$(void 0, 'img-responsive', 'images/meetup_1_2_70/6.jpg');
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_45($receiver) {
+    $receiver.link_hsosmf$('images/meetup_1_2_70/6.jpg', void 0, mapOf(to('data-fancybox', 'kotlin-1_2_70')), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_45);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_46($receiver) {
+    $receiver.img_lmu3us$(void 0, 'img-responsive', 'images/meetup_1_2_70/7.jpg');
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_46($receiver) {
+    $receiver.link_hsosmf$('images/meetup_1_2_70/7.jpg', void 0, mapOf(to('data-fancybox', 'kotlin-1_2_70')), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_46);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_47($receiver) {
+    $receiver.img_lmu3us$(void 0, 'img-responsive', 'images/meetup_1_2_70/8.jpg');
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_47($receiver) {
+    $receiver.link_hsosmf$('images/meetup_1_2_70/8.jpg', void 0, mapOf(to('data-fancybox', 'kotlin-1_2_70')), main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_47);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_20($receiver) {
+    $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_44);
+    $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_45);
+    $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_46);
+    $receiver.div_qf6fe3$(void 0, 'col-xs-12 col-sm-6 col-md-3', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda$lambda_47);
+    return Unit;
+  }
+  function main$lambda$lambda$lambda$lambda$lambda$lambda_18($receiver) {
+    $receiver.div_qf6fe3$(void 0, 'row', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_19);
+    $receiver.div_qf6fe3$(void 0, 'row', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_20);
     return Unit;
   }
   function main$lambda$lambda$lambda$lambda$lambda_9($receiver) {
-    $receiver.div_qf6fe3$('meetup1', 'tab-pane fade in active', void 0, mapOf(to('role', 'tabpanel')), main$lambda$lambda$lambda$lambda$lambda$lambda_11);
-    $receiver.div_qf6fe3$('kotlin-bkk', 'tab-pane fade', void 0, mapOf(to('role', 'tabpanel')), main$lambda$lambda$lambda$lambda$lambda$lambda_12);
-    $receiver.div_qf6fe3$('kotlin-workshop', 'tab-pane fade', void 0, mapOf(to('role', 'tabpanel')), main$lambda$lambda$lambda$lambda$lambda$lambda_13);
-    $receiver.div_qf6fe3$('kotlin-1_2', 'tab-pane fade', void 0, mapOf(to('role', 'tabpanel')), main$lambda$lambda$lambda$lambda$lambda$lambda_14);
-    $receiver.div_qf6fe3$('kotlin-1_2_41', 'tab-pane fade', void 0, mapOf(to('role', 'tabpanel')), main$lambda$lambda$lambda$lambda$lambda$lambda_15);
-    $receiver.div_qf6fe3$('mobconf18', 'tab-pane fade', void 0, mapOf(to('role', 'tabpanel')), main$lambda$lambda$lambda$lambda$lambda$lambda_16);
+    $receiver.div_qf6fe3$('meetup1', 'tab-pane fade in active', void 0, mapOf(to('role', 'tabpanel')), main$lambda$lambda$lambda$lambda$lambda$lambda_12);
+    $receiver.div_qf6fe3$('kotlin-bkk', 'tab-pane fade', void 0, mapOf(to('role', 'tabpanel')), main$lambda$lambda$lambda$lambda$lambda$lambda_13);
+    $receiver.div_qf6fe3$('kotlin-workshop', 'tab-pane fade', void 0, mapOf(to('role', 'tabpanel')), main$lambda$lambda$lambda$lambda$lambda$lambda_14);
+    $receiver.div_qf6fe3$('kotlin-1_2', 'tab-pane fade', void 0, mapOf(to('role', 'tabpanel')), main$lambda$lambda$lambda$lambda$lambda$lambda_15);
+    $receiver.div_qf6fe3$('kotlin-1_2_41', 'tab-pane fade', void 0, mapOf(to('role', 'tabpanel')), main$lambda$lambda$lambda$lambda$lambda$lambda_16);
+    $receiver.div_qf6fe3$('mobconf18', 'tab-pane fade', void 0, mapOf(to('role', 'tabpanel')), main$lambda$lambda$lambda$lambda$lambda$lambda_17);
+    $receiver.div_qf6fe3$('kotlin-1_2_70', 'tab-pane fade', void 0, mapOf(to('role', 'tabpanel')), main$lambda$lambda$lambda$lambda$lambda$lambda_18);
     return Unit;
   }
   function main$lambda$lambda$lambda$lambda_7($receiver) {
@@ -1039,13 +1132,13 @@ var output = function (_, Kotlin) {
     $receiver.div_qf6fe3$('events', 'row me-row schedule', void 0, void 0, main$lambda$lambda$lambda_4);
     return Unit;
   }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda_17($receiver) {
+  function main$lambda$lambda$lambda$lambda$lambda$lambda_19($receiver) {
     $receiver.text_61zpoe$('Thailand Kotlin Developer');
     return Unit;
   }
   function main$lambda$lambda$lambda$lambda$lambda_10($receiver) {
     $receiver.text_61zpoe$('\xA9 2017, ');
-    $receiver.link_hsosmf$('https://thaikotlindev.github.io', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda_17);
+    $receiver.link_hsosmf$('https://thaikotlindev.github.io', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda_19);
     $receiver.text_61zpoe$(' | All rights reserved.');
     return Unit;
   }
@@ -1053,25 +1146,25 @@ var output = function (_, Kotlin) {
     $receiver.p_9jyg1o$(void 0, main$lambda$lambda$lambda$lambda$lambda_10);
     return Unit;
   }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_18($receiver) {
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_21($receiver) {
     $receiver.italic_puj7f4$('ti-facebook', ' Facebook Group');
     return Unit;
   }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda_18($receiver) {
-    $receiver.link_hsosmf$('https://www.facebook.com/groups/872547279487598/?ref=bookmarks', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_18);
+  function main$lambda$lambda$lambda$lambda$lambda$lambda_20($receiver) {
+    $receiver.link_hsosmf$('https://www.facebook.com/groups/872547279487598/?ref=bookmarks', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_21);
     return Unit;
   }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_19($receiver) {
+  function main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_22($receiver) {
     $receiver.italic_puj7f4$('ti-email', ' Contact Us');
     return Unit;
   }
-  function main$lambda$lambda$lambda$lambda$lambda$lambda_19($receiver) {
-    $receiver.link_hsosmf$('mailto:thaikotlindev@gmail.com', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_19);
+  function main$lambda$lambda$lambda$lambda$lambda$lambda_21($receiver) {
+    $receiver.link_hsosmf$('mailto:thaikotlindev@gmail.com', void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda$lambda_22);
     return Unit;
   }
   function main$lambda$lambda$lambda$lambda$lambda_11($receiver) {
-    $receiver.li_7jt3u2$(void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda_18);
-    $receiver.li_7jt3u2$(void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda_19);
+    $receiver.li_7jt3u2$(void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda_20);
+    $receiver.li_7jt3u2$(void 0, void 0, main$lambda$lambda$lambda$lambda$lambda$lambda_21);
     return Unit;
   }
   function main$lambda$lambda$lambda$lambda_9($receiver) {

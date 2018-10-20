@@ -144,6 +144,12 @@ fun main(args: Array<String>) {
                                 text("Mobile Conf 2018")
                             }
                         }
+
+                        li(role = "presentation") {
+                            link(to = "#kotlin-1_2_70", attrs = mapOf("aria-controls" to "kotlin-1_2_70", "role" to "tab", "data-toggle" to "tab")) {
+                                text("Kotlin 1.2.70")
+                            }
+                        }
                     }
 
                     div(className = "tab-content") {
@@ -414,6 +420,60 @@ fun main(args: Array<String>) {
                                 div(className = "col-xs-12 col-sm-6 col-md-3") {
                                     link(to = "images/mobconf18/8.jpg", attrs = mapOf("data-fancybox" to "mobconf18")) {
                                         img(className = "img-responsive", src = "images/mobconf18/8.jpg")
+                                    }
+                                }
+                            }
+                        }
+
+                        div(id = "kotlin-1_2_70", className = "tab-pane fade", attrs = mapOf("role" to "tabpanel")) {
+                            div(className = "row") {
+                                div(className = "col-xs-12 col-sm-6 col-md-3") {
+                                    link(to = "images/meetup_1_2_70/1.jpg", attrs = mapOf("data-fancybox" to "kotlin-1_2_70")) {
+                                        img(className = "img-responsive", src = "images/meetup_1_2_70/1.jpg")
+                                    }
+                                }
+
+                                div(className = "col-xs-12 col-sm-6 col-md-3") {
+                                    link(to = "images/meetup_1_2_70/2.jpg", attrs = mapOf("data-fancybox" to "kotlin-1_2_70")) {
+                                        img(className = "img-responsive", src = "images/meetup_1_2_70/2.jpg")
+                                    }
+                                }
+
+                                div(className = "col-xs-12 col-sm-6 col-md-3") {
+                                    link(to = "images/meetup_1_2_70/3.jpg", attrs = mapOf("data-fancybox" to "kotlin-1_2_70")) {
+                                        img(className = "img-responsive", src = "images/meetup_1_2_70/3.jpg")
+                                    }
+                                }
+
+                                div(className = "col-xs-12 col-sm-6 col-md-3") {
+                                    link(to = "images/meetup_1_2_70/4.jpg", attrs = mapOf("data-fancybox" to "kotlin-1_2_70")) {
+                                        img(className = "img-responsive", src = "images/meetup_1_2_70/4.jpg")
+                                    }
+                                }
+                            }
+
+                            div(className = "row") {
+                                div(className = "col-xs-12 col-sm-6 col-md-3") {
+                                    link(to = "images/meetup_1_2_70/5.jpg", attrs = mapOf("data-fancybox" to "kotlin-1_2_70")) {
+                                        img(className = "img-responsive", src = "images/meetup_1_2_70/5.jpg")
+                                    }
+                                }
+
+                                div(className = "col-xs-12 col-sm-6 col-md-3") {
+                                    link(to = "images/meetup_1_2_70/6.jpg", attrs = mapOf("data-fancybox" to "kotlin-1_2_70")) {
+                                        img(className = "img-responsive", src = "images/meetup_1_2_70/6.jpg")
+                                    }
+                                }
+
+                                div(className = "col-xs-12 col-sm-6 col-md-3") {
+                                    link(to = "images/meetup_1_2_70/7.jpg", attrs = mapOf("data-fancybox" to "kotlin-1_2_70")) {
+                                        img(className = "img-responsive", src = "images/meetup_1_2_70/7.jpg")
+                                    }
+                                }
+
+                                div(className = "col-xs-12 col-sm-6 col-md-3") {
+                                    link(to = "images/meetup_1_2_70/8.jpg", attrs = mapOf("data-fancybox" to "kotlin-1_2_70")) {
+                                        img(className = "img-responsive", src = "images/meetup_1_2_70/8.jpg")
                                     }
                                 }
                             }
