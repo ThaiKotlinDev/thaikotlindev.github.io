@@ -78,24 +78,24 @@ fun main(args: Array<String>) {
 
         div(id = "next-event", className = "container-fluid tickets") {
             div(className = "row me-row content-ct") {
-                h2("row-title") { text("Kotlin Meet Up 1.2.70") }
+                h2("row-title") { text("Kotlin Meet Up Coming Soon") }
 
                 div(className = "col-md-12 col-sm-12") {
-                    h2 { text("Ticket") }
-                    p("price", "Free")
-                    div(className = "detail") {
-                        h3 {
-                            text("Everything you need to know about writing ")
-                            italic("Android")
-                            text(" apps in ")
-                            strong("Kotlin")
-                        }
+                    // h2 { text("Ticket") }
+                    // p("price", "Free")
+                    // div(className = "detail") {
+                    //     h3 {
+                    //         text("Everything you need to know about writing ")
+                    //         italic("Android")
+                    //         text(" apps in ")
+                    //         strong("Kotlin")
+                    //     }
 
-                        ul {
-                            li(className = "text-left") { text("Write a better code with Conductor's Controller by Kittinun Vantasin, Mobile developer @ Mercari") }
-                            li(className = "text-left") { text("Start your Firebase admin with Kotlin by Kotlin2JS by Theerasan Tonthonkam, Android develoepr @ Eatigo") }
-                        }
-                    }
+                    //     ul {
+                    //         li(className = "text-left") { text("Write a better code with Conductor's Controller by Kittinun Vantasin, Mobile developer @ Mercari") }
+                    //         li(className = "text-left") { text("Start your Firebase admin with Kotlin by Kotlin2JS by Theerasan Tonthonkam, Android develoepr @ Eatigo") }
+                    //     }
+                    // }
 
                     br()
                     br()
