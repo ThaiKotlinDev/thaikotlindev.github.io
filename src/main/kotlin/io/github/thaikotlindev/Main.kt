@@ -26,11 +26,11 @@ fun main(args: Array<String>) {
                     // img(className = "logo", src = "images/meetup-logo.png")
 
                     h1 {
-                        text("Kotlin Meet Up Coming soon")
+                        text("Kotlin Meetup 2019.1 ")
                     }
 
-                    // h3 { text("18:00 - 21:00 @ Learn Hub") }
-                    // h4 { text("18 October, 2018") }
+                    h3 { text("18:30 - 21:00 @ Fastwork") }
+                    h4 { text("26 February, 2019") }
 
                     link("#next-event", "btn btn-lg btn-red page-scroll") {
                         text("More Detail")
@@ -78,24 +78,23 @@ fun main(args: Array<String>) {
 
         div(id = "next-event", className = "container-fluid tickets") {
             div(className = "row me-row content-ct") {
-                h2("row-title") { text("Kotlin Meet Up Coming Soon") }
+                h2("row-title") { text("Kotlin Meetup 2019.1") }
 
                 div(className = "col-md-12 col-sm-12") {
-                    // h2 { text("Ticket") }
-                    // p("price", "Free")
-                    // div(className = "detail") {
-                    //     h3 {
-                    //         text("Everything you need to know about writing ")
-                    //         italic("Android")
-                    //         text(" apps in ")
-                    //         strong("Kotlin")
-                    //     }
+                    h2 { text("Ticket") }
+                    p("price", "Free")
+                    div(className = "detail") {
+                        h3 {
+                            text("Everything you need to know about writing ")
+                            italic("Android")
+                            text(" apps in ")
+                            strong("Kotlin")
+                        }
 
-                    //     ul {
-                    //         li(className = "text-left") { text("Write a better code with Conductor's Controller by Kittinun Vantasin, Mobile developer @ Mercari") }
-                    //         li(className = "text-left") { text("Start your Firebase admin with Kotlin by Kotlin2JS by Theerasan Tonthonkam, Android develoepr @ Eatigo") }
-                    //     }
-                    // }
+                        ul {
+                            li(className = "text-left") { text("TBD by Travis Subannaphong, Senior Android Developer @ Fastwork") }
+                        }
+                    }
 
                     br()
                     br()
