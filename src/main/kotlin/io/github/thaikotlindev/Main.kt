@@ -30,7 +30,7 @@ fun main(args: Array<String>) {
                     }
 
                     h3 { text("18:30 - 21:00 @ Fastwork") }
-                    h4 { text("26 February, 2019") }
+                    h4 { text("27 February, 2019") }
 
                     link("#next-event", "btn btn-lg btn-red page-scroll") {
                         text("More Detail")

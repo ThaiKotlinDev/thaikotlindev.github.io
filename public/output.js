@@ -374,7 +374,7 @@ var output = function (_, Kotlin) {
     return Unit;
   }
   function main$lambda$lambda$lambda$lambda$lambda_2($receiver) {
-    $receiver.text_61zpoe$('26 February, 2019');
+    $receiver.text_61zpoe$('27 February, 2019');
     return Unit;
   }
   function main$lambda$lambda$lambda$lambda$lambda_3($receiver) {
