@@ -92,7 +92,7 @@ fun main(args: Array<String>) {
                         }
 
                         ul {
-                            li(className = "text-left") { text("TBD by Travis Subannaphong, Senior Android Developer @ Fastwork") }
+                            li(className = "text-left") { text("Composition over inheritance like a boss by Travis Subannaphong, Senior Android Developer @ Fastwork") }
                         }
                     }
 

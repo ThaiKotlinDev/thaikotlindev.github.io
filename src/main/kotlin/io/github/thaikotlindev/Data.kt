@@ -34,7 +34,7 @@ val features = listOf(
 )
 
 val staffs = listOf(
-        Staff("Birth", "verachad.jpg", "Senior Android Developer @ Agoda",
+        Staff("Birth", "verachad.jpg", "Lead Mobile Engineer @ Fastwork",
                 mutableListOf(
                         Contact("https://github.com/verachadW", ContactType.GITHUB),
                         Contact("https://twitter.com/verachadw", ContactType.TWITTER),
@@ -49,7 +49,7 @@ val staffs = listOf(
                         Contact("https://twitter.com/dewparin", ContactType.TWITTER)
                 )),
 
-        Staff("Travis P", "travisp.jpg", "Kotlin God @ SCB, Co-Founder/Editor at Black Lens Publication",
+        Staff("Travis P", "travisp.jpg", "Senior Android Software Engineer @ Fastwork, Co-Founder/Editor at Black Lens Publication",
                 mutableListOf(
                         Contact("http://blacklenspub.com", ContactType.WEB),
                         Contact("https://github.com/travisp101", ContactType.GITHUB),
@@ -73,7 +73,7 @@ val staffs = listOf(
                         Contact("https://plus.google.com/+ChristopherNg", ContactType.GOOGLE)
                 )),
 
-        Staff("Ju", "ju.jpg", "Developer & Drummer",
+        Staff("Ju", "ju.jpg", "Senior Android Software Engineer & Drummer @ Fastwork",
                 mutableListOf(
                         Contact("https://github.com/judrummer", ContactType.GITHUB),
                         Contact("https://www.youtube.com/c/JuDrummer", ContactType.YOUTUBE),
