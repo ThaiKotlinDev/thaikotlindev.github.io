@@ -29,7 +29,7 @@ fun main(args: Array<String>) {
                         text("Kotlin Meetup 2019.1 ")
                     }
 
-                    h3 { text("18:30 - 21:00 @ Fastwork") }
+                    h3 { text("19:00 - 21:00 @ Fastwork") }
                     h4 { text("27 February, 2019") }
 
                     link("#next-event", "btn btn-lg btn-red page-scroll") {
