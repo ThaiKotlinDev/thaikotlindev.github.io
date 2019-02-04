@@ -370,7 +370,7 @@ var output = function (_, Kotlin) {
     return Unit;
   }
   function main$lambda$lambda$lambda$lambda$lambda_1($receiver) {
-    $receiver.text_61zpoe$('19:00 - 21:00 @ Fastwork');
+    $receiver.text_61zpoe$('18:30 - 21:00 @ Fastwork');
     return Unit;
   }
   function main$lambda$lambda$lambda$lambda$lambda_2($receiver) {
